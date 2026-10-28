@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://ledplanet.in/</loc>
     <lastmod>2026-10-28</lastmod>
+    <image:image><image:loc>https://ledplanet.in/images/storefront.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ledplanet.in/images/logo.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ledplanet.in/images/hero-pendants.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ledplanet.in/images/cat-pendant.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ledplanet.in/images/cat-chandelier.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ledplanet.in/images/cat-lamps.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ledplanet.in/images/cat-led.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ledplanet.in/images/cat-panel.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ledplanet.in/images/cat-wall.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ledplanet.in/images/team-sathishkumar.jpg</image:loc></image:image>
+    <image:image><image:loc>https://ledplanet.in/images/team-karthikeyan.jpg</image:loc></image:image>
   </url>
 </urlset>
