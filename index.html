@@ -3,830 +3,1228 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>LED Planet — New Website Coming Soon</title>
-<meta name="description" content="LED Planet's official website is under construction. We're building a brighter online experience for you — coming soon at ledplanet.in.">
+<title>LED PLANET Karur | LED Light Shop in Karur, Tamil Nadu</title>
+<meta name="description" content="LED light shop in Karur: LED bulbs, tube lights, panel lights, hanging lights, chandeliers and decorative lamps at LED PLANET, Bharathi Nagar. Call +91 98949 59523.">
+<meta name="theme-color" content="#023BBE">
+<link rel="icon" type="image/png" href="images/favicon.png">
+<meta name="robots" content="index, follow, max-image-preview:large">
 <link rel="canonical" href="https://ledplanet.in/">
-
-<!--
-  INDEXING POLICY — TEMPORARY HOLDING PAGE
-  While this under-construction page is live, search engines are asked not to index it
-  ("noindex") but may still follow its links ("follow").
-  >>> WHEN THE FULL WEBSITE LAUNCHES: delete the robots meta tag below
-      (or change its content to "index, follow"). Do not ship the real site with noindex.
--->
-<meta name="robots" content="noindex, follow">
-
-<meta name="theme-color" content="#FBFAF7">
-<meta name="color-scheme" content="light">
-<meta name="author" content="Aalvinai Technologies">
-
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="LED Planet">
-<meta property="og:title" content="LED Planet — Lighting Up Your World.">
-<meta property="og:description" content="We're building a brighter online experience for you. Our new website is coming soon.">
-<meta property="og:url" content="https://ledplanet.in/">
+<meta property="og:site_name" content="LED PLANET">
 <meta property="og:locale" content="en_IN">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="LED Planet — Lighting Up Your World.">
-<meta name="twitter:description" content="We're building a brighter online experience for you. Our new website is coming soon.">
-
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23FFFFFF'/%3E%3Ccircle cx='32' cy='32' r='23' fill='%23FFF4D6'/%3E%3Ccircle cx='32' cy='32' r='13' fill='%23F59E0B'/%3E%3Cellipse cx='32' cy='32' rx='27' ry='8.5' fill='none' stroke='%231D4ED8' stroke-width='4' transform='rotate(-22 32 32)'/%3E%3C/svg%3E">
-
+<meta property="og:title" content="LED PLANET | LED Light Shop in Karur">
+<meta property="og:description" content="LED bulbs, tube lights, panel lights, hanging lights, chandeliers and decorative lamps. Visit our LED shop on Bharathi Nagar Main Road, Karur.">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:image" content="https://ledplanet.in/images/storefront.jpg">
+<meta property="og:image:alt" content="LED PLANET showroom on Bharathi Nagar Main Road, Karur">
+<meta property="og:url" content="https://ledplanet.in/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap">
-
-<style>
-  :root {
-    --bg: #FBFAF7;
-    --surface: #FFFFFF;
-    --ink: #0F1B2D;
-    --ink-2: #2A3650;
-    --muted: #556070;
-    --line: #E9E4D9;
-    --line-cool: #E3E8F2;
-    --blue: #1D4ED8;
-    --blue-2: #2563EB;
-    --blue-soft: #EAF0FF;
-    --amber: #F59E0B;
-    --amber-deep: #B45309;
-    --yellow: #FDE68A;
-    --shadow: 0 1px 2px rgba(15, 27, 45, .04), 0 14px 36px -16px rgba(15, 27, 45, .16);
-    --shadow-lg: 0 2px 4px rgba(15, 27, 45, .04), 0 24px 48px -20px rgba(15, 27, 45, .22);
-    --font-head: "Poppins", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    --font-body: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  }
-
-  *, *::before, *::after { box-sizing: border-box; }
-  html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
-  body {
-    margin: 0;
-    font-family: var(--font-body);
-    font-size: 1rem;
-    line-height: 1.6;
-    color: var(--ink);
-    background: var(--bg);
-    overflow-x: hidden;
-    -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
-  }
-  @supports (overflow: clip) { body { overflow-x: clip; } }
-  img, svg { display: block; max-width: 100%; }
-  a { color: inherit; }
-  :focus-visible { outline: 3px solid var(--blue-2); outline-offset: 3px; border-radius: 6px; }
-
-  .sr-only {
-    position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
-    overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0;
-  }
-
-  .wrap {
-    width: 100%;
-    max-width: 1200px;
-    margin-inline: auto;
-    padding-inline: clamp(16px, 4vw, 40px);
-  }
-
-  /* ---------- Page shell & ambient background ---------- */
-  .page {
-    position: relative;
-    isolation: isolate;
-    display: flex;
-    flex-direction: column;
-  }
-  .ambient {
-    position: absolute;
-    inset: 0;
-    z-index: -1;
-    overflow: hidden;
-    pointer-events: none;
-  }
-  .ambient::before,
-  .ambient::after {
-    content: "";
-    position: absolute;
-    aspect-ratio: 1;
-    border-radius: 50%;
-  }
-  .ambient::before {
-    width: min(920px, 130vw);
-    left: -22%;
-    top: -38%;
-    background: radial-gradient(closest-side, rgba(253, 230, 138, .55), rgba(253, 230, 138, 0));
-  }
-  .ambient::after {
-    width: min(1040px, 140vw);
-    right: -28%;
-    top: -18%;
-    background: radial-gradient(closest-side, rgba(37, 99, 235, .10), rgba(37, 99, 235, 0));
-  }
-  .ambient .grid {
-    position: absolute;
-    inset: 0;
-    background-image:
-      linear-gradient(to right, rgba(15, 27, 45, .045) 1px, transparent 1px),
-      linear-gradient(to bottom, rgba(15, 27, 45, .045) 1px, transparent 1px);
-    background-size: 64px 64px;
-    -webkit-mask-image: radial-gradient(ellipse 70% 50% at 62% 28%, #000 15%, transparent 72%);
-            mask-image: radial-gradient(ellipse 70% 50% at 62% 28%, #000 15%, transparent 72%);
-  }
-  .ambient .warm {
-    position: absolute;
-    width: min(700px, 110vw);
-    aspect-ratio: 1;
-    left: -18%;
-    bottom: -30%;
-    border-radius: 50%;
-    background: radial-gradient(closest-side, rgba(255, 214, 140, .28), rgba(255, 214, 140, 0));
-  }
-
-  /* ---------- Header ---------- */
-  .site-header .wrap {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 16px;
-    padding-block: clamp(14px, 2.4vw, 26px);
-  }
-  .brand {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    font-family: var(--font-head);
-    font-weight: 600;
-    font-size: clamp(1.08rem, .98rem + .5vw, 1.3rem);
-    letter-spacing: -.01em;
-    color: var(--ink);
-    white-space: nowrap;
-  }
-  .brand .led { color: var(--blue); }
-  .brand-mark { width: 40px; height: 40px; flex: none; }
-  .brand-mark .halo { transform-box: fill-box; transform-origin: center; animation: breathe 4.5s ease-in-out infinite; }
-  .domain {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    padding: 8px 14px;
-    font-size: .875rem;
-    font-weight: 500;
-    color: var(--muted);
-    background: rgba(255, 255, 255, .75);
-    border: 1px solid var(--line);
-    border-radius: 999px;
-  }
-  .domain svg { width: 16px; height: 16px; color: var(--blue); }
-
-  /* ---------- Hero ---------- */
-  .hero { flex: 1; display: flex; align-items: center; }
-  .hero .wrap {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1.12fr);
-    align-items: center;
-    gap: clamp(28px, 5vw, 72px);
-    padding-block: clamp(12px, 3vw, 40px) clamp(12px, 2vw, 24px);
-  }
-  .hero-copy { min-width: 0; }
-
-  .status {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    margin: 0 0 clamp(18px, 2.4vw, 26px);
-    padding: 7px 15px 7px 11px;
-    font-size: .8125rem;
-    font-weight: 600;
-    letter-spacing: .02em;
-    color: var(--ink-2);
-    background: var(--surface);
-    border: 1px solid var(--line);
-    border-radius: 999px;
-    box-shadow: 0 1px 2px rgba(15, 27, 45, .04), 0 8px 18px -10px rgba(15, 27, 45, .16);
-  }
-  .pulse {
-    position: relative;
-    width: 9px;
-    height: 9px;
-    flex: none;
-    border-radius: 50%;
-    background: var(--amber);
-  }
-  .pulse::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    border-radius: 50%;
-    background: var(--amber);
-    animation: ping 2s cubic-bezier(0, 0, .2, 1) infinite;
-  }
-
-  h1 {
-    margin: 0 0 clamp(14px, 2vw, 22px);
-    font-family: var(--font-head);
-    font-weight: 700;
-    font-size: clamp(2.3rem, 1.15rem + 4.6vw, 4.5rem);
-    line-height: 1.06;
-    letter-spacing: -.03em;
-    color: var(--ink);
-  }
-  .glow { position: relative; display: inline-block; isolation: isolate; }
-  .glow::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 4%;
-    bottom: .06em;
-    height: .2em;
-    z-index: -1;
-    border-radius: 99px;
-    background: linear-gradient(90deg, rgba(253, 230, 138, .2), rgba(253, 216, 120, .95) 45%, rgba(245, 158, 11, .5) 85%, rgba(253, 230, 138, 0));
-  }
-  .glow-text {
-    color: var(--blue);
-    background: linear-gradient(100deg, #1D4ED8 0%, #2563EB 52%, #B45309 100%);
-    -webkit-background-clip: text;
-            background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-
-  .lead {
-    max-width: 34ch;
-    margin: 0 0 clamp(24px, 3vw, 36px);
-    font-size: clamp(1.03rem, .95rem + .35vw, 1.2rem);
-    color: var(--muted);
-  }
-
-  .cta-row {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 16px 24px;
-  }
-  .cta {
-    position: relative;
-    overflow: hidden;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
-    min-height: 54px;
-    margin: 0;
-    padding: 0 28px 0 20px;
-    font-family: var(--font-head);
-    font-weight: 600;
-    font-size: 1rem;
-    letter-spacing: .01em;
-    color: #FFFFFF;
-    background: linear-gradient(135deg, #2563EB 0%, #1D4ED8 60%, #1E40AF 100%);
-    border-radius: 999px;
-    box-shadow: 0 12px 26px -12px rgba(29, 78, 216, .6), inset 0 1px 0 rgba(255, 255, 255, .2);
-    cursor: default;
-    -webkit-user-select: none;
-            user-select: none;
-  }
-  .cta::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(110deg, transparent 30%, rgba(255, 255, 255, .32) 50%, transparent 70%);
-    transform: translateX(-120%);
-    animation: sheen 6s ease-in-out 1.2s infinite;
-  }
-  .cta-icon { width: 24px; height: 24px; flex: none; }
-  .cta-icon .bulb-halo { transform-box: fill-box; transform-origin: center; animation: breathe 2.8s ease-in-out infinite; }
-
-  .build {
-    display: grid;
-    gap: 9px;
-    min-width: 0;
-  }
-  .build-label {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin: 0;
-    font-size: .875rem;
-    font-weight: 500;
-    color: var(--ink-2);
-  }
-  .dots { display: inline-flex; gap: 5px; }
-  .dots i {
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    background: var(--blue-2);
-    opacity: .3;
-    animation: blink 1.4s ease-in-out infinite;
-  }
-  .dots i:nth-child(2) { background: var(--amber); animation-delay: .2s; }
-  .dots i:nth-child(3) { animation-delay: .4s; }
-  .track {
-    position: relative;
-    width: min(250px, 100%);
-    height: 4px;
-    overflow: hidden;
-    border-radius: 99px;
-    background: #ECEFF5;
-  }
-  .track::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    width: 38%;
-    border-radius: inherit;
-    background: linear-gradient(90deg, #FDE68A, #F59E0B 50%, #2563EB);
-    animation: indeterminate 2.6s cubic-bezier(.65, 0, .35, 1) infinite;
-  }
-
-  /* ---------- Hero illustration ---------- */
-  .hero-art { position: relative; margin: 0; min-width: 0; }
-  .hero-art::before {
-    content: "";
-    position: absolute;
-    inset: 4% 2% 0;
-    z-index: -1;
-    border-radius: 50%;
-    background:
-      radial-gradient(closest-side, rgba(255, 214, 122, .42), rgba(255, 214, 122, 0) 72%),
-      radial-gradient(closest-side at 70% 40%, rgba(59, 130, 246, .12), rgba(59, 130, 246, 0) 70%);
-  }
-  .art { width: 100%; height: auto; overflow: visible; }
-
-  /* ---------- Footer credit line ---------- */
-  .site-footer { padding-block: 0 12px; }
-  .footer-bar {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 4px 16px;
-    padding-top: 10px;
-    border-top: 1px solid var(--line);
-    font-size: .75rem;
-    line-height: 1.4;
-    color: var(--muted);
-  }
-  .footer-bar p { margin: 0; }
-  .footer-bar strong { font-weight: 600; color: var(--ink); }
-  .footer-bar a {
-    display: inline-flex;
-    align-items: center;
-    gap: 3px;
-    font-weight: 600;
-    color: var(--blue);
-    text-decoration: none;
-    white-space: nowrap;
-  }
-  .footer-bar a span { border-bottom: 1px solid rgba(15, 27, 45, .2); transition: border-color .2s ease; }
-  .footer-bar a:hover span { border-bottom-color: currentColor; }
-  .footer-bar a svg { width: 11px; height: 11px; transition: transform .2s ease; }
-  .footer-bar a:hover svg { transform: translate(2px, -2px); }
-
-  /* ---------- Illustration animation (11 s seamless loop) ---------- */
-  .art { --cycle: 11s; --ease: cubic-bezier(.22, .61, .36, 1); }
-  .art .frame     { animation: lp-frame var(--cycle) ease-in-out infinite both; }
-  .art .skel      { opacity: 0; animation: lp-skel var(--cycle) ease-in-out infinite both; }
-  .art .nav-item  { animation: lp-nav var(--cycle) var(--ease) infinite both; animation-delay: var(--d, 0s); }
-  .art .card-in   { animation: lp-card var(--cycle) var(--ease) infinite both; animation-delay: var(--d, 0s); }
-  .art .room      { animation: lp-room var(--cycle) var(--ease) infinite both; }
-  .art .lit       { animation: lp-lit var(--cycle) linear infinite both; animation-delay: var(--d, 0s); }
-  .art .sweep     { opacity: 0; animation: lp-sweep var(--cycle) cubic-bezier(.45, 0, .25, 1) infinite both; }
-  .art .float     { animation: float var(--f, 6s) ease-in-out infinite; animation-delay: var(--fd, 0s); }
-  .art .sd        { animation: blink 1.4s ease-in-out infinite; animation-delay: var(--d, 0s); }
-  .art .spark     { transform-box: fill-box; transform-origin: center; animation: twinkle 3.6s ease-in-out infinite; animation-delay: var(--d, 0s); }
-  .art.is-paused *,
-  .page.is-hidden * { animation-play-state: paused !important; }
-
-  @keyframes lp-frame { 0%, 100% { opacity: .35; } 5%, 93% { opacity: 1; } }
-  @keyframes lp-skel  { 0%, 2% { opacity: 0; } 9%, 25% { opacity: 1; } 32%, 100% { opacity: 0; } }
-  @keyframes lp-nav {
-    0%, 5%    { opacity: 0; transform: translateY(-8px); }
-    13%, 91%  { opacity: 1; transform: none; }
-    96%, 100% { opacity: 0; transform: translateY(-4px); }
-  }
-  @keyframes lp-card {
-    0%, 14%   { opacity: 0; transform: translateY(16px); }
-    23%, 89%  { opacity: 1; transform: none; }
-    95%, 100% { opacity: 0; transform: translateY(-8px); }
-  }
-  @keyframes lp-room {
-    0%, 24%   { opacity: 0; transform: translateY(10px); }
-    35%, 91%  { opacity: 1; transform: none; }
-    97%, 100% { opacity: 0; transform: none; }
-  }
-  @keyframes lp-lit {
-    0%, 38%   { opacity: 0; }
-    40%       { opacity: .85; }
-    41.2%     { opacity: .2; }
-    43.5%, 78% { opacity: 1; }
-    84%, 100% { opacity: 0; }
-  }
-  @keyframes lp-sweep {
-    0%, 57%   { opacity: 0; transform: translateX(0) skewX(-18deg); }
-    59%       { opacity: 1; }
-    71%       { opacity: 1; transform: translateX(900px) skewX(-18deg); }
-    72%, 100% { opacity: 0; transform: translateX(900px) skewX(-18deg); }
-  }
-
-  /* ---------- Shared micro-animations ---------- */
-  @keyframes float   { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-7px); } }
-  @keyframes twinkle { 0%, 100% { opacity: .2; transform: scale(.6); } 50% { opacity: 1; transform: scale(1); } }
-  @keyframes blink   { 0%, 100% { opacity: .3; } 45% { opacity: 1; } }
-  @keyframes ping    { 0% { transform: scale(1); opacity: .55; } 80%, 100% { transform: scale(2.8); opacity: 0; } }
-  @keyframes breathe { 0%, 100% { transform: scale(.92); opacity: .75; } 50% { transform: scale(1.06); opacity: 1; } }
-  @keyframes sheen   { 0%, 55% { transform: translateX(-120%); } 80%, 100% { transform: translateX(120%); } }
-  @keyframes indeterminate { 0% { transform: translateX(-100%); } 100% { transform: translateX(265%); } }
-
-  /* ---------- Responsive ---------- */
-  @media (min-width: 768px) {
-    .page { min-height: 100vh; min-height: 100svh; }
-    .hero { min-height: min(720px, calc(100svh - 64px)); }
-  }
-  @media (max-width: 1023px) {
-    .hero .wrap { grid-template-columns: minmax(0, .92fr) minmax(0, 1.08fr); gap: clamp(24px, 4vw, 40px); }
-    h1 { font-size: clamp(2.3rem, 1rem + 3.7vw, 3.3rem); }
-  }
-  @media (max-width: 767px) {
-    .hero .wrap { grid-template-columns: minmax(0, 1fr); gap: 24px; padding-block: 8px 16px; }
-    h1 { font-size: clamp(2.2rem, 1.2rem + 5vw, 3.2rem); }
-    .lead { max-width: 46ch; }
-    .hero-art { width: 100%; max-width: 580px; margin-inline: auto; }
-  }
-  @media (max-width: 599px) {
-    .art .m-hide { display: none; }
-    .art .float { animation: none; }
-    .domain { padding: 6px 11px; font-size: .8125rem; }
-  }
-  @media (max-width: 440px) {
-    .cta-row { gap: 18px; }
-    .cta { width: 100%; }
-  }
-  @media (max-width: 359px) {
-    .domain span { display: none; }
-  }
-
-  /* Respect users who prefer less motion: show the finished, lit illustration statically */
-  @media (prefers-reduced-motion: reduce) {
-    *, *::before, *::after {
-      animation: none !important;
-      transition: none !important;
-      scroll-behavior: auto !important;
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800;900&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700&family=Noto+Sans+Tamil:wght@400;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://ledplanet.in/#website",
+      "url": "https://ledplanet.in/",
+      "name": "LED PLANET",
+      "alternateName": [
+        "LED Planet Karur",
+        "LED PLANET KRR"
+      ],
+      "inLanguage": "en-IN",
+      "publisher": {
+        "@id": "https://ledplanet.in/#store"
+      }
+    },
+    {
+      "@type": "Store",
+      "@id": "https://ledplanet.in/#store",
+      "name": "LED PLANET",
+      "alternateName": [
+        "LED Planet Karur",
+        "LED PLANET KRR",
+        "எல் இ டி பிளானட்"
+      ],
+      "slogan": "Exclusive Lighting Solutions",
+      "description": "LED and lighting shop in Karur, Tamil Nadu: LED bulbs, tube lights, panel lights and downlights, hanging and pendant lights, chandeliers, decorative lamps, wall lights and smart lighting for home, residential and commercial projects.",
+      "url": "https://ledplanet.in/",
+      "logo": "https://ledplanet.in/images/logo.jpg",
+      "image": "https://ledplanet.in/images/storefront.jpg",
+      "telephone": "+91-98949-59523",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "51/3,4, Bharathi Nagar Main Road, Bharathi Nagar (behind Max Showroom, opposite V Care)",
+        "addressLocality": "Karur",
+        "addressRegion": "Tamil Nadu",
+        "postalCode": "639002",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 10.9623986,
+        "longitude": 78.0652022
+      },
+      "hasMap": "https://www.google.com/maps?cid=5091903275389189758",
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Karur"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Karur district, Tamil Nadu"
+        }
+      ],
+      "founder": [
+        {
+          "@type": "Person",
+          "name": "B Sathishkumar",
+          "jobTitle": "Co-Founder"
+        },
+        {
+          "@type": "Person",
+          "name": "CP Karthikeyan",
+          "jobTitle": "Co-Founder"
+        }
+      ],
+      "knowsAbout": [
+        "LED lighting",
+        "LED bulbs",
+        "LED tube lights",
+        "LED panel lights",
+        "Chandeliers",
+        "Decorative lighting",
+        "Smart lighting"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Lighting products",
+        "itemListElement": [
+          {
+            "@type": "OfferCatalog",
+            "name": "Hanging & Pendant Lights"
+          },
+          {
+            "@type": "OfferCatalog",
+            "name": "Chandeliers & Decorative Ceiling Lights"
+          },
+          {
+            "@type": "OfferCatalog",
+            "name": "Decorative Lamps"
+          },
+          {
+            "@type": "OfferCatalog",
+            "name": "LED Bulbs & Tube Lights"
+          },
+          {
+            "@type": "OfferCatalog",
+            "name": "Panel Lights & Downlights"
+          },
+          {
+            "@type": "OfferCatalog",
+            "name": "Wall & Accent Lights"
+          }
+        ]
+      },
+      "sameAs": [
+        "https://www.instagram.com/ledplanetkrr/",
+        "https://www.facebook.com/ledplanetkrr",
+        "https://www.google.com/maps?cid=5091903275389189758"
+      ]
     }
-  }
+  ]
+}
+</script>
+<style>
+/* Layout: one scrolling showroom page. Royal-blue bands taken from the shop signage
+   alternate with cool white sections; the logo's red/green/blue letters become a
+   thin "LED" stripe that marks section boundaries. */
+:root{
+  --brand:#023BBE;        /* signage blue */
+  --brand-deep:#03216E;
+  --brand-ink:#0B2A7A;
+  --sky:#289FE3;          /* logo ring */
+  --teal:#0BE0CA;
+  --amber:#FBB005;        /* logo dot */
+  --amber-deep:#E39C00;
+  --gold:#B19416;         /* "PLANET" lettering */
+  --led-red:#EA0B06; --led-green:#1BA619; --led-blue:#0B75E3;
+  --bg:#F4F7FD; --surface:#FFFFFF; --surface-2:#E9EFFB;
+  --fg:#0D1730; --muted:#566079; --border:#D9E1F2;
+  --on-brand:#FFFFFF; --on-brand-muted:#C9D7FF;
+  --radius:10px;
+  --font-display:'Nunito', 'Segoe UI', system-ui, sans-serif;
+  --font-body:'Nunito Sans', 'Segoe UI', system-ui, sans-serif;
+  --font-tamil:'Noto Sans Tamil', 'Latha', 'Nirmala UI', sans-serif;
+  color-scheme:light;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--font-body);font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;cursor:pointer;background:none;border:0;padding:0}
+h1,h2,h3{font-family:var(--font-display);line-height:1.15;margin:0;text-wrap:balance;letter-spacing:-.01em}
+p{margin:0}
+:focus-visible{outline:3px solid var(--amber);outline-offset:2px;border-radius:4px}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.skip{position:absolute;left:-999px;top:8px;z-index:200;background:var(--amber);color:var(--fg);padding:10px 16px;border-radius:6px;font-weight:700}
+.skip:focus{left:12px}
+.icon{width:20px;height:20px;flex-shrink:0;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+
+.wrap{max-width:1200px;margin:0 auto;padding-inline:20px}
+.section{padding-block:80px}
+@media (max-width:720px){.section{padding-block:56px}}
+.section-head{max-width:640px;margin-bottom:40px}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-family:var(--font-display);font-weight:800;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--brand)}
+.eyebrow::before{content:"";width:22px;height:3px;border-radius:2px;background:linear-gradient(90deg,var(--led-red) 0 33%,var(--led-green) 33% 66%,var(--led-blue) 66%)}
+.h1{font-size:clamp(2.3rem,5.4vw,3.9rem);font-weight:900}
+.h2{font-size:clamp(1.75rem,3.4vw,2.5rem);font-weight:900;margin-top:10px}
+.h3{font-size:1.15rem;font-weight:800}
+.lede{color:var(--muted);font-size:1.06rem;margin-top:12px;max-width:60ch}
+.muted{color:var(--muted)}
+
+.led-stripe{height:5px;background:linear-gradient(90deg,var(--led-red) 0 33.33%,var(--led-green) 33.33% 66.66%,var(--led-blue) 66.66%)}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;font-family:var(--font-display);font-weight:800;font-size:.95rem;padding:13px 24px;border-radius:999px;border:2px solid transparent;transition:transform .15s ease,background-color .15s ease,box-shadow .15s ease;white-space:nowrap}
+.btn:hover{transform:translateY(-1px)}
+.btn-amber{background:var(--amber);color:#14204A;box-shadow:0 6px 16px rgba(251,176,5,.28)}
+.btn-amber:hover{background:#FFBE1F}
+.btn-brand{background:var(--brand);color:var(--on-brand)}
+.btn-brand:hover{background:#0546DD}
+.btn-ghost{border-color:rgba(255,255,255,.55);color:#fff}
+.btn-ghost:hover{background:rgba(255,255,255,.1)}
+.btn-line{border-color:var(--border);background:var(--surface);color:var(--fg)}
+.btn-line:hover{border-color:var(--brand);color:var(--brand)}
+.btn-sm{padding:9px 14px;font-size:.82rem}
+.btn-wa{background:#25D366;color:#06301A}
+.btn-wa:hover{background:#2EE172}
+
+/* Top strip + nav */
+.topbar{background:var(--brand-deep);color:var(--on-brand-muted);font-size:.84rem}
+.topbar .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:6px 20px;padding-block:7px}
+.topbar a{display:inline-flex;align-items:center;gap:6px}
+.topbar a:hover{color:#fff}
+.topbar .icon{width:15px;height:15px}
+.topbar-left,.topbar-right{display:flex;flex-wrap:wrap;gap:6px 18px}
+@media (max-width:720px){.topbar .topbar-hide-sm{display:none}}
+
+.nav{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.96);backdrop-filter:blur(10px);border-bottom:1px solid var(--border)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:72px}
+.brand{display:flex;align-items:center;gap:11px;min-width:0}
+.brand img{width:46px;height:46px;border-radius:50%}
+.brand-name{display:block;font-size:1.25rem;line-height:1;color:var(--brand)}
+/* LED PLANET wordmark, redrawn from the shop signboard lettering */
+.wm{position:relative;display:inline-block;vertical-align:baseline}
+.wm svg{display:block;height:.71em;width:calc(.71em * 8.569);fill:currentColor}
+.brand-name .wm svg{height:.95em;width:calc(.95em * 8.569)}
+.muted .wm,.lede .wm{color:var(--brand)}
+.brand-tag{display:block;font-size:.68rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);margin-top:4px}
+.nav-links{display:flex;align-items:center;gap:28px;font-family:var(--font-display);font-weight:700;font-size:.95rem}
+.nav-links a{position:relative;padding-block:6px}
+.nav-links a::after{content:"";position:absolute;left:0;right:0;bottom:0;height:2px;border-radius:2px;background:var(--brand);transform:scaleX(0);transition:transform .2s ease}
+.nav-links a:hover{color:var(--brand)}
+.nav-links a:hover::after{transform:scaleX(1)}
+@media (max-width:420px){.brand-tag{font-size:.58rem;letter-spacing:.07em}.brand-name{font-size:1.05rem}}
+.menu-btn{display:none;width:44px;height:44px;border-radius:10px;align-items:center;justify-content:center;background:var(--surface-2);color:var(--brand)}
+.mobile-menu{display:none}
+@media (max-width:960px){
+  .nav-links,.nav-cta{display:none}
+  .menu-btn{display:inline-flex}
+  .mobile-menu{display:block;overflow:hidden;max-height:0;transition:max-height .3s ease;background:var(--surface);border-top:1px solid var(--border)}
+  .mobile-menu nav{display:flex;flex-direction:column;gap:4px;padding:12px 20px 20px;font-family:var(--font-display);font-weight:700}
+  .mobile-menu nav a{padding:10px 0;border-bottom:1px solid var(--border)}
+  .mobile-menu .btn{margin-top:12px}
+}
+
+/* Hero */
+.hero{background:radial-gradient(1200px 500px at 85% -10%,rgba(40,159,227,.45),transparent 60%),var(--brand);color:var(--on-brand);overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center;padding-block:72px 84px}
+.hero-tamil{font-family:var(--font-tamil);font-weight:600;font-size:1.05rem;color:var(--amber);margin-bottom:10px}
+.hero .eyebrow{color:#fff}
+.hero p.hero-text{color:var(--on-brand-muted);font-size:1.12rem;margin-top:18px;max-width:52ch}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.hero-note{display:flex;align-items:center;gap:8px;margin-top:22px;font-size:.92rem;color:var(--on-brand-muted)}
+.hero-media{position:relative}
+.hero-media img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:18px;box-shadow:0 24px 60px rgba(0,0,0,.35)}
+.hero-card{position:absolute;left:-28px;bottom:28px;display:flex;align-items:center;gap:12px;max-width:290px;background:#fff;color:var(--fg);padding:14px 16px;border-radius:14px;box-shadow:0 14px 40px rgba(3,33,110,.3)}
+.hero-card img{width:46px;height:46px;border-radius:50%;aspect-ratio:auto;box-shadow:none}
+.hero-card strong{display:block;font-family:var(--font-display);font-size:.95rem}
+.hero-card span{font-size:.82rem;color:var(--muted);line-height:1.4;display:block}
+@media (max-width:900px){
+  .hero .wrap{grid-template-columns:1fr;padding-block:48px 64px;gap:36px}
+  .hero-media{max-width:460px}
+  .hero-media img{aspect-ratio:4/3}
+  .hero-card{left:14px;bottom:14px;right:14px;max-width:none}
+}
+
+/* Project types */
+.projects{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.project{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:26px}
+.project .badge{width:48px;height:48px;border-radius:12px;display:flex;align-items:center;justify-content:center;margin-bottom:16px;color:#fff}
+.project .badge .icon{width:24px;height:24px}
+.project:nth-child(1) .badge{background:var(--led-red)}
+.project:nth-child(2) .badge{background:var(--led-green)}
+.project:nth-child(3) .badge{background:var(--led-blue)}
+.project p{color:var(--muted);margin-top:6px;font-size:.96rem}
+@media (max-width:800px){.projects{grid-template-columns:1fr}}
+
+/* Cards */
+.card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden}
+.zoom{overflow:hidden;display:block}
+.zoom img{transition:transform .5s ease}
+.card:hover .zoom img{transform:scale(1.05)}
+@media (prefers-reduced-motion:reduce){.card:hover .zoom img{transform:none}}
+
+.cat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.cat-card{display:flex;flex-direction:column;text-align:left;width:100%;transition:box-shadow .2s ease,border-color .2s ease}
+.cat-card:hover{border-color:#B7C7EC;box-shadow:0 12px 30px rgba(2,59,190,.10)}
+.cat-card .zoom{aspect-ratio:4/3}
+.cat-card .zoom img{width:100%;height:100%;object-fit:cover}
+.cat-body{padding:18px 20px 20px;display:flex;flex-direction:column;flex:1}
+.cat-body p{color:var(--muted);font-size:.93rem;margin-top:6px;flex:1}
+.cat-link{display:inline-flex;align-items:center;gap:6px;margin-top:14px;font-family:var(--font-display);font-weight:800;font-size:.9rem;color:var(--brand)}
+.cat-link .icon{width:16px;height:16px;transition:transform .2s ease}
+.cat-card:hover .cat-link .icon{transform:translateX(3px)}
+@media (max-width:960px){.cat-grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:600px){.cat-grid{grid-template-columns:1fr}}
+
+/* Catalogue */
+.toolbar{display:flex;flex-wrap:wrap;align-items:center;gap:14px;margin-bottom:28px}
+.search{position:relative;flex:1 1 260px;max-width:360px}
+.search .icon{position:absolute;left:14px;top:50%;transform:translateY(-50%);color:var(--muted);width:18px;height:18px}
+.input{width:100%;font:inherit;color:var(--fg);background:var(--surface);border:1.5px solid var(--border);border-radius:10px;padding:12px 14px}
+.input:focus{outline:none;border-color:var(--brand);box-shadow:0 0 0 3px rgba(2,59,190,.15)}
+.search .input{padding-left:42px;border-radius:999px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{font-size:.86rem;font-weight:700;padding:8px 15px;border-radius:999px;border:1.5px solid var(--border);background:var(--surface);transition:background-color .15s,color .15s,border-color .15s}
+.chip:hover{border-color:var(--brand)}
+.chip[aria-pressed="true"]{background:var(--brand);border-color:var(--brand);color:#fff}
+.prod-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.prod-card{display:flex;flex-direction:column}
+.prod-card .zoom{aspect-ratio:1/1;width:100%}
+.prod-card .zoom img{width:100%;height:100%;object-fit:cover}
+.prod-body{padding:14px 16px 16px;display:flex;flex-direction:column;flex:1}
+.tag-sample{align-self:flex-start;font-size:.68rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);background:var(--surface-2);border-radius:999px;padding:3px 9px;margin-bottom:8px}
+.prod-body h3{font-size:1rem;font-weight:800}
+.prod-cat{font-size:.82rem;color:var(--muted);margin-top:2px}
+.prod-price{font-size:.85rem;font-weight:700;color:var(--brand-ink);margin-top:6px}
+.prod-actions{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:auto;padding-top:14px}
+.no-results{text-align:center;color:var(--muted);padding:40px 0}
+@media (max-width:1100px){.prod-grid{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:800px){.prod-grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:600px){
+  .toolbar{gap:12px}
+  .search{max-width:none}
+  .chips{flex-wrap:nowrap;overflow-x:auto;width:100%;padding-bottom:6px;scroll-snap-type:x proximity;scrollbar-width:thin}
+  .chip{flex-shrink:0;scroll-snap-align:start}
+  .prod-grid{gap:12px}
+  .prod-body{padding:12px}
+  .prod-body h3{font-size:.92rem}
+  .prod-actions{grid-template-columns:1fr}
+}
+@media (max-width:340px){.prod-grid{grid-template-columns:1fr}}
+
+/* About */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.about-photo{position:relative}
+.about-photo img{width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:16px}
+.about-photo figcaption{font-size:.82rem;color:var(--muted);margin-top:10px}
+.about-text p+p{margin-top:14px}
+.about-text .muted{font-size:1.02rem}
+.facts{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:26px}
+.fact{display:flex;gap:12px;align-items:flex-start;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:14px}
+.fact .icon{color:var(--brand);margin-top:2px}
+.fact strong{display:block;font-family:var(--font-display);font-size:.95rem}
+.fact span{font-size:.86rem;color:var(--muted)}
+@media (max-width:900px){.about-grid{grid-template-columns:1fr;gap:32px}}
+@media (max-width:520px){.facts{grid-template-columns:1fr}}
+
+/* Quote band */
+.quote{background:var(--brand-deep);color:#fff;text-align:center}
+.quote .wrap{max-width:860px;padding-block:72px}
+.quote-mark{font-family:var(--font-display);font-size:4.5rem;line-height:.6;color:var(--amber);display:block;margin-bottom:10px}
+.quote blockquote{margin:0;font-family:var(--font-display);font-weight:700;font-size:clamp(1.25rem,2.6vw,1.75rem);line-height:1.45}
+.quote cite{display:block;margin-top:20px;font-style:normal;font-weight:700;color:var(--amber)}
+.quote small{display:block;margin-top:6px;color:var(--on-brand-muted);font-size:.85rem}
+
+/* Team */
+.team-grid{display:grid;grid-template-columns:repeat(2,minmax(0,280px));gap:28px;justify-content:center}
+.member{text-align:center;padding:16px 16px 22px}
+.member img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:8px}
+.member h3{margin-top:16px;font-size:1.2rem}
+.member p{color:var(--gold);font-weight:700;font-size:.85rem;letter-spacing:.1em;text-transform:uppercase;margin-top:4px}
+@media (max-width:560px){.team-grid{grid-template-columns:minmax(0,300px)}}
+
+/* FAQ */
+.faq-list{display:flex;flex-direction:column;gap:12px;max-width:820px}
+.faq{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius)}
+.faq summary{list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:18px 20px;font-family:var(--font-display);font-weight:800;cursor:pointer}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary .icon{color:var(--brand);transition:transform .25s ease}
+.faq[open] summary .icon{transform:rotate(180deg)}
+.faq-body{padding:0 20px 18px;color:var(--muted)}
+
+/* Contact */
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
+.contact-list{display:flex;flex-direction:column;gap:18px;margin-top:28px}
+.contact-item{display:flex;gap:14px;align-items:flex-start}
+.contact-item .ico{width:44px;height:44px;border-radius:12px;background:var(--surface-2);color:var(--brand);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.contact-item strong{display:block;font-family:var(--font-display)}
+.contact-item span,.contact-item a.link{color:var(--muted);font-size:.95rem}
+.contact-item a.link{color:var(--brand);font-weight:700}
+.contact-item a.link:hover{text-decoration:underline}
+.contact-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.map{margin-top:28px;border-radius:14px;overflow:hidden;border:1px solid var(--border);aspect-ratio:16/10;background:var(--surface-2)}
+.map iframe{width:100%;height:100%;border:0;display:block}
+.form{padding:28px}
+.form h3{font-size:1.25rem}
+.form .muted{font-size:.92rem;margin-top:4px}
+.field{margin-top:16px}
+.field label{display:block;font-weight:700;font-size:.88rem;margin-bottom:6px}
+.field .err{display:none;color:#C21807;font-size:.82rem;margin-top:5px}
+.field.invalid .input{border-color:#C21807}
+.field.invalid .err{display:block}
+textarea.input{resize:vertical;min-height:110px}
+.form .btn{width:100%;margin-top:20px}
+.form-note{font-size:.82rem;color:var(--muted);margin-top:12px}
+.form-note.ok{color:var(--led-green);font-weight:700}
+.form-note.bad{color:#C21807;font-weight:700}
+.form .btn:disabled{opacity:.7;cursor:wait}
+#waFormBtn{width:100%}
+@media (max-width:900px){.contact-grid{grid-template-columns:1fr}}
+
+/* Footer */
+.footer{background:var(--brand-deep);color:var(--on-brand-muted);font-size:.93rem}
+.footer .wrap{padding-block:56px 28px}
+.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1.2fr 1.3fr;gap:36px}
+.footer h3{font-family:var(--font-display);color:#fff;font-size:1rem;margin:0 0 14px}
+.footer ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:9px}
+.footer a:hover,.footer button:hover{color:#fff}
+.footer .brand-name{color:#fff}
+.footer .brand-tag{color:var(--amber)}
+.footer-about{margin-top:16px;max-width:36ch}
+.socials{display:flex;gap:10px;margin-top:18px}
+.socials a{width:40px;height:40px;border-radius:10px;background:rgba(255,255,255,.08);display:flex;align-items:center;justify-content:center;color:#fff;transition:background-color .15s}
+.socials a:hover{background:rgba(255,255,255,.18)}
+.footer-bottom{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 20px;border-top:1px solid rgba(255,255,255,.12);margin-top:40px;padding-top:20px;font-size:.84rem}
+@media (max-width:960px){.footer-grid{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.footer-grid{grid-template-columns:1fr}}
+
+/* Floating WhatsApp + modal */
+.wa-fab{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:70;width:58px;height:58px;border-radius:50%;background:#25D366;color:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 22px rgba(0,0,0,.25);transition:transform .15s ease}
+.wa-fab:hover{transform:scale(1.06)}
+.wa-fab svg{width:30px;height:30px}
+dialog{border:0;padding:0;border-radius:16px;width:min(620px,calc(100vw - 32px));max-height:calc(100vh - 48px);background:var(--surface);color:var(--fg);box-shadow:0 30px 80px rgba(0,0,0,.35)}
+dialog::backdrop{background:rgba(3,17,56,.6)}
+.modal-head{display:flex;justify-content:space-between;align-items:center;padding:14px 18px;border-bottom:1px solid var(--border);font-family:var(--font-display);font-weight:800}
+.modal-close{width:38px;height:38px;border-radius:10px;background:var(--surface-2);display:flex;align-items:center;justify-content:center}
+.modal-body{padding:20px;overflow:auto}
+.modal-body img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:10px;margin-bottom:16px}
+.modal-body .btn{width:100%;margin-top:18px}
+
+/* Karur local section */
+.karur-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:start}
+.areas{list-style:none;margin:14px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.areas li{font-size:.86rem;font-weight:700;padding:7px 14px;border-radius:999px;background:var(--surface-2);color:var(--brand-ink)}
+.karur-ta{background:var(--bg);border:1px solid var(--border);border-radius:var(--radius);padding:26px;font-family:'Nunito Sans','Noto Sans Tamil','Nirmala UI',sans-serif}
+.karur-ta .h3{font-family:'Nunito','Noto Sans Tamil','Nirmala UI',sans-serif}
+.karur-ta p{color:var(--muted);margin-top:12px;line-height:1.85}
+.karur-ta a{color:var(--brand);font-weight:700}
+@media (max-width:900px){.karur-grid{grid-template-columns:1fr;gap:28px}}
+.hero-tagline{font-family:var(--font-display);line-height:1.15;margin-top:14px;text-wrap:balance;letter-spacing:-.01em}
+.hero h1.eyebrow{line-height:1.5}
+.faq-group{font-size:1.15rem;margin:0 0 14px;color:var(--brand-ink)}
+.faq-group+.lede{margin:-8px 0 16px}
+.faq-list+.faq-group{margin-top:40px}
+.guide-cta{display:flex;flex-wrap:wrap;align-items:center;gap:14px 20px;max-width:820px;margin-top:22px;padding:18px 20px;border-radius:var(--radius);background:var(--surface-2)}
+.guide-cta p{font-weight:700;flex:1 1 260px}
+
+/* Reveal on scroll (progressive: content is visible unless JS opts in) */
+.reveal{transition:opacity .7s ease,transform .7s ease}
+.reveal.pre{opacity:0;transform:translateY(18px)}
+@media (prefers-reduced-motion:reduce){.reveal{transition:none}}
 </style>
 </head>
 <body>
-<div class="page">
-  <div class="ambient" aria-hidden="true"><div class="grid"></div><div class="warm"></div></div>
 
-  <header class="site-header">
-    <div class="wrap">
-      <div class="brand" aria-label="LED Planet">
-        <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true">
-          <defs>
-            <radialGradient id="mk-core" cx=".38" cy=".34" r=".72">
-              <stop offset="0" stop-color="#FFF6CC"/>
-              <stop offset=".55" stop-color="#FCC64A"/>
-              <stop offset="1" stop-color="#F59E0B"/>
-            </radialGradient>
-          </defs>
-          <circle class="halo" cx="20" cy="20" r="19" fill="#FFF3D1"/>
-          <path d="M3.6 26.3C1.9 22.9 9.1 17.2 19.6 13.6S37.6 9.7 39.3 13" fill="none" stroke="#1D4ED8" stroke-width="2.2" stroke-linecap="round" opacity=".45"/>
-          <circle cx="20" cy="20" r="10.5" fill="url(#mk-core)"/>
-          <path d="M39.3 13c1.7 3.4-5.5 9.1-16 12.7S4.3 29.6 2.6 26.3" fill="none" stroke="#1D4ED8" stroke-width="2.2" stroke-linecap="round"/>
-          <circle cx="33" cy="7.5" r="2" fill="#2563EB"/>
-        </svg>
-        <span><span class="led">LED</span> Planet</span>
-      </div>
-      <p class="domain" style="margin:0">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg>
-        <span>ledplanet.in</span>
-      </p>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <path id="wm" d="M0 0L19.5 0L19.5 62L19.5 63.4L19.7 64.9L19.9 66.3L20.2 67.7L20.7 69.1L21.2 70.4L21.8 71.7L22.4 73L23.2 74.2L24 75.4L25 76.5L25.9 77.6L27 78.5L28.1 79.5L29.3 80.3L30.5 81.1L31.8 81.7L33.1 82.3L34.4 82.8L35.8 83.3L37.2 83.6L38.6 83.8L40.1 84L41.5 84L69.5 84L69.5 100L40 100L37.4 99.9L34.8 99.7L32.2 99.2L29.6 98.6L27.1 97.9L24.7 97L22.3 95.9L20 94.6L17.8 93.3L15.6 91.7L13.6 90.1L11.7 88.3L9.9 86.4L8.3 84.4L6.7 82.2L5.4 80L4.1 77.7L3 75.3L2.1 72.9L1.4 70.4L0.8 67.8L0.3 65.2L0.1 62.6L0 60ZM114.5 0L153.3 0L153.3 16L116 16L114.6 16L113.1 16.2L111.7 16.4L110.3 16.7L108.9 17.2L107.6 17.7L106.3 18.3L105 18.9L103.8 19.7L102.6 20.5L101.5 21.5L100.4 22.4L99.5 23.5L98.5 24.6L97.7 25.8L96.9 27L96.3 28.3L95.7 29.6L95.2 30.9L94.7 32.3L94.4 33.7L94.2 35.1L94 36.6L94 38L94 41.5L153.3 41.5L153.3 57.5L94 57.5L94 62L94 63.4L94.2 64.9L94.4 66.3L94.7 67.7L95.2 69.1L95.7 70.4L96.3 71.7L96.9 73L97.7 74.2L98.5 75.4L99.5 76.5L100.4 77.6L101.5 78.5L102.6 79.5L103.8 80.3L105 81.1L106.3 81.7L107.6 82.3L108.9 82.8L110.3 83.3L111.7 83.6L113.1 83.8L114.6 84L116 84L153.3 84L153.3 100L114.5 100L111.9 99.9L109.3 99.7L106.7 99.2L104.1 98.6L101.6 97.9L99.2 97L96.8 95.9L94.5 94.6L92.3 93.3L90.1 91.7L88.1 90.1L86.2 88.3L84.4 86.4L82.8 84.4L81.2 82.2L79.9 80L78.6 77.7L77.5 75.3L76.6 72.9L75.9 70.4L75.3 67.8L74.8 65.2L74.6 62.6L74.5 60L74.5 40L74.6 37.4L74.8 34.8L75.3 32.2L75.9 29.6L76.6 27.1L77.5 24.7L78.6 22.3L79.9 20L81.2 17.8L82.8 15.6L84.4 13.6L86.2 11.7L88.1 9.9L90.1 8.3L92.3 6.7L94.5 5.4L96.8 4.1L99.2 3L101.6 2.1L104.1 1.4L106.7 0.8L109.3 0.3L111.9 0.1L114.5 0ZM172.2 0L216.6 0L219.5 0.1L222.5 0.4L225.4 0.9L228.2 1.5L231.1 2.4L233.8 3.4L236.5 4.6L239.1 6L241.6 7.6L244 9.3L246.3 11.2L248.4 13.2L250.4 15.3L252.3 17.6L254 20L255.6 22.5L257 25.1L258.2 27.8L259.2 30.5L260.1 33.4L260.7 36.2L261.2 39.1L261.5 42.1L261.6 45L261.6 55L261.5 57.9L261.2 60.9L260.7 63.8L260.1 66.6L259.2 69.5L258.2 72.2L257 74.9L255.6 77.5L254 80L252.3 82.4L250.4 84.7L248.4 86.8L246.3 88.8L244 90.7L241.6 92.4L239.1 94L236.5 95.4L233.8 96.6L231.1 97.6L228.2 98.5L225.4 99.1L222.5 99.6L219.5 99.9L216.6 100L172.2 100ZM317.9 0L370.5 0L372.6 0.1L374.7 0.3L376.8 0.6L378.9 1.1L380.9 1.7L382.9 2.5L384.9 3.4L386.8 4.4L388.6 5.5L390.3 6.7L391.9 8.1L393.5 9.5L394.9 11.1L396.3 12.7L397.5 14.4L398.6 16.2L399.6 18.1L400.5 20.1L401.3 22.1L401.9 24.1L402.4 26.2L402.7 28.3L402.9 30.4L403 32.5L402.9 34.6L402.7 36.7L402.4 38.8L401.9 40.9L401.3 42.9L400.5 44.9L399.6 46.9L398.6 48.8L397.5 50.6L396.3 52.3L394.9 53.9L393.5 55.5L391.9 56.9L390.3 58.3L388.6 59.5L386.8 60.6L384.9 61.6L382.9 62.5L380.9 63.3L378.9 63.9L376.8 64.4L374.7 64.7L372.6 64.9L370.5 65L337.4 65L337.4 100L317.9 100ZM415.9 0L435.4 0L435.4 62L435.4 63.4L435.6 64.9L435.8 66.3L436.1 67.7L436.6 69.1L437.1 70.4L437.7 71.7L438.3 73L439.1 74.2L439.9 75.4L440.9 76.5L441.8 77.6L442.9 78.5L444 79.5L445.2 80.3L446.4 81.1L447.7 81.7L449 82.3L450.3 82.8L451.7 83.3L453.1 83.6L454.5 83.8L456 84L457.4 84L483.4 84L483.4 100L455.9 100L453.3 99.9L450.7 99.7L448.1 99.2L445.5 98.6L443 97.9L440.6 97L438.2 95.9L435.9 94.6L433.7 93.3L431.5 91.7L429.5 90.1L427.6 88.3L425.8 86.4L424.2 84.4L422.6 82.2L421.3 80L420 77.7L418.9 75.3L418 72.9L417.3 70.4L416.7 67.8L416.2 65.2L416 62.6L415.9 60ZM521.6 0L540.6 0L581.3 100L562.7 100L552.7 75.5L509.5 75.5L499.5 100L480.9 100ZM589.7 0L609.2 0L609.2 100L589.7 100ZM653.6 0L673.1 0L673.1 100L653.6 100ZM596.2 0L613.9 0L668.9 100L652 100ZM727.7 0L766 0L766 16L729.2 16L727.8 16L726.3 16.2L724.9 16.4L723.5 16.7L722.1 17.2L720.8 17.7L719.5 18.3L718.2 18.9L717 19.7L715.8 20.5L714.7 21.5L713.6 22.4L712.7 23.5L711.7 24.6L710.9 25.8L710.1 27L709.5 28.3L708.9 29.6L708.4 30.9L707.9 32.3L707.6 33.7L707.4 35.1L707.2 36.6L707.2 38L707.2 41.5L766 41.5L766 57.5L707.2 57.5L707.2 62L707.2 63.4L707.4 64.9L707.6 66.3L707.9 67.7L708.4 69.1L708.9 70.4L709.5 71.7L710.1 73L710.9 74.2L711.7 75.4L712.7 76.5L713.6 77.6L714.7 78.5L715.8 79.5L717 80.3L718.2 81.1L719.5 81.7L720.8 82.3L722.1 82.8L723.5 83.3L724.9 83.6L726.3 83.8L727.8 84L729.2 84L766 84L766 100L727.7 100L725.1 99.9L722.5 99.7L719.9 99.2L717.3 98.6L714.8 97.9L712.4 97L710 95.9L707.7 94.6L705.5 93.3L703.3 91.7L701.3 90.1L699.4 88.3L697.6 86.4L696 84.4L694.4 82.2L693.1 80L691.8 77.7L690.7 75.3L689.8 72.9L689.1 70.4L688.5 67.8L688 65.2L687.8 62.6L687.7 60L687.7 40L687.8 37.4L688 34.8L688.5 32.2L689.1 29.6L689.8 27.1L690.7 24.7L691.8 22.3L693.1 20L694.4 17.8L696 15.6L697.6 13.6L699.4 11.7L701.3 9.9L703.3 8.3L705.5 6.7L707.7 5.4L710 4.1L712.4 3L714.8 2.1L717.3 1.4L719.9 0.8L722.5 0.3L725.1 0.1L727.7 0ZM774.8 0L856.9 0L856.9 16L774.8 16ZM806.1 15L825.6 15L825.6 100L806.1 100ZM191.7 16L191.7 84L216.6 84L218.2 83.9L219.9 83.8L221.5 83.5L223.1 83.1L224.6 82.7L226.2 82.1L227.7 81.4L229.1 80.7L230.5 79.8L231.8 78.8L233.1 77.8L234.3 76.7L235.4 75.5L236.4 74.2L237.4 72.9L238.3 71.5L239 70.1L239.7 68.6L240.3 67L240.7 65.5L241.1 63.9L241.4 62.3L241.5 60.6L241.6 59L241.6 41L241.5 39.4L241.4 37.7L241.1 36.1L240.7 34.5L240.3 33L239.7 31.4L239 29.9L238.3 28.5L237.4 27.1L236.4 25.8L235.4 24.5L234.3 23.3L233.1 22.2L231.8 21.2L230.5 20.2L229.1 19.3L227.7 18.6L226.2 17.9L224.6 17.3L223.1 16.9L221.5 16.5L219.9 16.2L218.2 16.1L216.6 16ZM337.4 17L337.4 49L364.6 49L365.6 49L366.7 48.9L367.7 48.7L368.7 48.5L369.7 48.2L370.7 47.8L371.7 47.3L372.6 46.9L373.5 46.3L374.3 45.7L375.1 45L375.9 44.3L376.6 43.5L377.3 42.7L377.9 41.9L378.5 41L378.9 40.1L379.4 39.1L379.8 38.1L380.1 37.1L380.3 36.1L380.5 35.1L380.6 34L380.6 33L380.6 32L380.5 30.9L380.3 29.9L380.1 28.9L379.8 27.9L379.4 26.9L378.9 25.9L378.5 25L377.9 24.1L377.3 23.3L376.6 22.5L375.9 21.7L375.1 21L374.3 20.3L373.5 19.7L372.6 19.1L371.7 18.7L370.7 18.2L369.7 17.8L368.7 17.5L367.7 17.3L366.7 17.1L365.6 17L364.6 17ZM531.1 22.3L515.9 59.6L546.3 59.6Z"/>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.9.6 2.8.7a2 2 0 0 1 1.7 2z"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="18" x2="20" y2="18"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></symbol>
+  <symbol id="i-chev" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></symbol>
+  <symbol id="i-home" viewBox="0 0 24 24"><path d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></symbol>
+  <symbol id="i-building" viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="1"/><path d="M9 6h2M13 6h2M9 10h2M13 10h2M9 14h2M13 14h2M10 22v-4h4v4"/></symbol>
+  <symbol id="i-store" viewBox="0 0 24 24"><path d="M3 9l1.5-5h15L21 9"/><path d="M3 9a3 3 0 0 0 6 0 3 3 0 0 0 6 0 3 3 0 0 0 6 0"/><path d="M5 12v9h14v-9"/><path d="M10 21v-5h4v5"/></symbol>
+  <symbol id="i-bulb" viewBox="0 0 24 24"><path d="M9 18h6M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.7c.6.5 1 1.3 1 2.1V17h6v-.2c0-.8.4-1.6 1-2.1A7 7 0 0 0 12 2z"/></symbol>
+  <symbol id="i-chip" viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/><path d="M9 2v4M15 2v4M9 18v4M15 18v4M2 9h4M2 15h4M18 9h4M18 15h4"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 20l1.1-5.6A8.4 8.4 0 1 1 21 11.5z"/></symbol>
+  <symbol id="i-nav" viewBox="0 0 24 24"><polygon points="3 11 22 2 13 21 11 13 3 11"/></symbol>
+  <symbol id="i-insta" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor"/></symbol>
+  <symbol id="i-fb" viewBox="0 0 24 24"><path d="M15 3h-2.5A3.5 3.5 0 0 0 9 6.5V9H7v3.5h2V21h3.5v-8.5H15l.5-3.5h-3V7a1 1 0 0 1 1-1H15z"/></symbol>
+  <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M12.04 2a9.96 9.96 0 0 0-8.63 14.91L2 22l5.25-1.38A9.96 9.96 0 1 0 12.04 2zm0 18.17a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.24 8.24 0 1 1 6.98 3.86zm4.52-6.17c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.17.24-.64.8-.78.97-.14.17-.29.19-.53.06-.25-.12-1.04-.38-1.98-1.21-.73-.65-1.23-1.46-1.37-1.7-.14-.24-.01-.37.11-.5.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48a.92.92 0 0 0-.67.31c-.23.25-.87.85-.87 2.08s.9 2.41 1.02 2.58c.12.17 1.78 2.72 4.31 3.81.6.26 1.07.41 1.44.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.19.21-.58.21-1.08.14-1.19-.06-.11-.23-.17-.48-.29z"/></symbol>
+</svg>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="topbar">
+  <div class="wrap">
+    <div class="topbar-left">
+      <a href="tel:+919894959523"><svg class="icon"><use href="#i-phone"/></svg>+91 98949 59523</a>
+      <a class="topbar-hide-sm" href="#contact"><svg class="icon"><use href="#i-pin"/></svg>Bharathi Nagar Main Road, Karur</a>
     </div>
-  </header>
-
-  <main class="hero" id="main">
-    <div class="wrap">
-      <div class="hero-copy">
-        <p class="status"><span class="pulse" aria-hidden="true"></span>Website Under Construction</p>
-
-        <h1>Lighting Up <span class="glow"><span class="glow-text">Your World.</span></span></h1>
-
-        <p class="lead">We're building a brighter online experience for you. Our new website is coming soon.</p>
-
-        <div class="cta-row">
-          <p class="cta">
-            <svg class="cta-icon" viewBox="0 0 24 24" aria-hidden="true">
-              <circle class="bulb-halo" cx="12" cy="10" r="10" fill="#FDE68A" opacity=".35"/>
-              <path d="M12 4.2a5.6 5.6 0 0 0-3.3 10.1v2.1h6.6v-2.1A5.6 5.6 0 0 0 12 4.2z" fill="#FDE68A"/>
-              <rect x="9.1" y="17.6" width="5.8" height="1.8" rx=".9" fill="#FFFFFF" opacity=".9"/>
-              <rect x="10" y="20.2" width="4" height="1.6" rx=".8" fill="#FFFFFF" opacity=".9"/>
-            </svg>
-            Coming Soon
-          </p>
-          <div class="build">
-            <p class="build-label"><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>Design &amp; development in progress</p>
-            <div class="track" aria-hidden="true"></div>
-          </div>
-        </div>
-      </div>
-
-      <figure class="hero-art">
-        <svg class="art" viewBox="0 0 600 450" role="img" aria-labelledby="art-title art-desc">
-          <title id="art-title">A lighting showroom coming to life inside a website being built</title>
-          <desc id="art-desc">A browser window outlines itself, navigation and interface cards slide into place, then a minimal architectural lighting showroom appears and its pendant lamps, ceiling lights, wall light and floor lamp switch on one after another.</desc>
-          <defs>
-            <linearGradient id="lp-cone" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0" stop-color="#FFD27A" stop-opacity=".8"/>
-              <stop offset="1" stop-color="#FFD27A" stop-opacity="0"/>
-            </linearGradient>
-            <radialGradient id="lp-glow">
-              <stop offset="0" stop-color="#FFF8DF" stop-opacity=".95"/>
-              <stop offset=".28" stop-color="#FFE08A" stop-opacity=".5"/>
-              <stop offset=".62" stop-color="#FFD27A" stop-opacity=".14"/>
-              <stop offset="1" stop-color="#FFD27A" stop-opacity="0"/>
-            </radialGradient>
-            <linearGradient id="lp-wall" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0" stop-color="#FFFFFF"/>
-              <stop offset="1" stop-color="#F9F6EF"/>
-            </linearGradient>
-            <linearGradient id="lp-floor" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0" stop-color="#EFEADF"/>
-              <stop offset="1" stop-color="#FBFAF6"/>
-            </linearGradient>
-            <linearGradient id="lp-ray" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0" stop-color="#FFE7A8" stop-opacity=".7"/>
-              <stop offset="1" stop-color="#FFE7A8" stop-opacity="0"/>
-            </linearGradient>
-            <linearGradient id="lp-sweep" x1="0" y1="0" x2="1" y2="0">
-              <stop offset="0" stop-color="#FFFFFF" stop-opacity="0"/>
-              <stop offset=".5" stop-color="#FFFFFF" stop-opacity=".7"/>
-              <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
-            </linearGradient>
-            <linearGradient id="lp-blue" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0" stop-color="#3B82F6"/>
-              <stop offset="1" stop-color="#1D4ED8"/>
-            </linearGradient>
-            <linearGradient id="lp-amber" x1="0" y1="0" x2="1" y2="0">
-              <stop offset="0" stop-color="#FDE68A"/>
-              <stop offset="1" stop-color="#F59E0B"/>
-            </linearGradient>
-            <clipPath id="lp-screen"><rect x="60" y="40" width="480" height="360" rx="18"/></clipPath>
-            <filter id="lp-shadow" x="-30%" y="-30%" width="160%" height="190%">
-              <feDropShadow dx="0" dy="8" stdDeviation="9" flood-color="#0F1B2D" flood-opacity=".12"/>
-            </filter>
-          </defs>
-
-          <!-- Soft grounding shadow (static) -->
-          <ellipse cx="300" cy="420" rx="236" ry="12" fill="#0F1B2D" opacity=".06"/>
-          <rect x="66" y="52" width="468" height="360" rx="20" fill="#0F1B2D" opacity=".035"/>
-          <rect x="62" y="46" width="476" height="360" rx="19" fill="#0F1B2D" opacity=".03"/>
-
-          <!-- 1 · Browser wireframe -->
-          <g class="frame">
-            <rect x="60" y="40" width="480" height="360" rx="18" fill="#FFFFFF" stroke="#E2E7F0" stroke-width="1.5"/>
-            <path d="M61 74H539" stroke="#EDF0F5" stroke-width="1.5"/>
-            <circle cx="82" cy="57" r="4.5" fill="#FCA5A5"/>
-            <circle cx="97" cy="57" r="4.5" fill="#FCD34D"/>
-            <circle cx="112" cy="57" r="4.5" fill="#86EFAC"/>
-            <rect x="200" y="48" width="200" height="18" rx="9" fill="#F3F5F9"/>
-            <path d="M262 55.5v-1.6a2.6 2.6 0 0 1 5.2 0v1.6M260.8 55.5h7.6v5h-7.6z" fill="none" stroke="#9AA3B5" stroke-width="1.1" stroke-linejoin="round"/>
-            <text x="304" y="61" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="10" font-weight="500" fill="#6E788B">ledplanet.in</text>
-          </g>
-          <!-- Status dots -->
-          <circle class="sd" style="--d:0s" cx="500" cy="57" r="3" fill="#2563EB"/>
-          <circle class="sd" style="--d:.2s" cx="512" cy="57" r="3" fill="#F59E0B"/>
-          <circle class="sd" style="--d:.4s" cx="524" cy="57" r="3" fill="#2563EB"/>
-
-          <g clip-path="url(#lp-screen)">
-            <!-- 1b · Dashed layout placeholders -->
-            <g class="skel" fill="none" stroke="#C3CEE3" stroke-width="1.5" stroke-dasharray="5 5">
-              <rect x="80" y="120" width="440" height="160" rx="10"/>
-              <rect x="80" y="294" width="136" height="88" rx="10"/>
-              <rect x="232" y="294" width="136" height="88" rx="10"/>
-              <rect x="384" y="294" width="136" height="88" rx="10"/>
-            </g>
-
-            <!-- 2 · Navigation slides in -->
-            <g class="nav-item" style="--d:0s">
-              <circle cx="88" cy="93" r="7" fill="url(#lp-amber)"/>
-              <rect x="100" y="89" width="54" height="8" rx="4" fill="#1F2A44"/>
-            </g>
-            <g class="nav-item" style="--d:.12s"><rect x="372" y="90" width="30" height="6" rx="3" fill="#CBD3E1"/></g>
-            <g class="nav-item" style="--d:.22s"><rect x="410" y="90" width="30" height="6" rx="3" fill="#CBD3E1"/></g>
-            <g class="nav-item" style="--d:.32s"><rect x="448" y="90" width="30" height="6" rx="3" fill="#CBD3E1"/></g>
-            <g class="nav-item" style="--d:.42s"><rect x="488" y="85" width="40" height="16" rx="8" fill="url(#lp-blue)"/></g>
-
-            <!-- 4 · Showroom architecture -->
-            <g class="room">
-              <polygon points="60,112 540,112 492,128 108,128" fill="#EDF0F5"/>
-              <polygon points="60,112 108,128 108,326 60,400" fill="#F3F0E9"/>
-              <polygon points="540,112 492,128 492,326 540,400" fill="#F3F0E9"/>
-              <rect x="108" y="128" width="384" height="198" fill="url(#lp-wall)"/>
-              <polygon points="108,326 492,326 540,400 60,400" fill="url(#lp-floor)"/>
-              <g fill="none" stroke-width="1">
-                <path d="M108 128V326M492 128V326M108 326H492M108 128H492" stroke="#E5DFD2"/>
-                <path d="M204 128V326M300 128V326M396 128V326" stroke="#F1ECE2"/>
-                <path d="M204 326L182 400M300 326V400M396 326L418 400" stroke="#E9E3D7"/>
-              </g>
-              <!-- ceiling LED housings -->
-              <g fill="#D3D9E3">
-                <circle cx="120" cy="120" r="2.2"/><circle cx="165" cy="120" r="2.2"/><circle cx="210" cy="120" r="2.2"/>
-                <circle cx="255" cy="120" r="2.2"/><circle cx="300" cy="120" r="2.2"/><circle cx="345" cy="120" r="2.2"/>
-                <circle cx="390" cy="120" r="2.2"/><circle cx="435" cy="120" r="2.2"/><circle cx="480" cy="120" r="2.2"/>
-              </g>
-              <!-- display plinth -->
-              <polygon points="262,298 338,298 346,306 254,306" fill="#F0EBE0"/>
-              <rect x="254" y="306" width="92" height="34" fill="#FFFFFF" stroke="#E5DFD2"/>
-              <!-- wall light strip (off) -->
-              <rect x="132" y="150" width="5" height="150" rx="2.5" fill="#E6E0D3"/>
-            </g>
-
-            <!-- 5a · Light spill: rays, cones and floor pools -->
-            <g class="lit" style="--d:1.3s">
-              <polygon points="108,128 170,128 344,326 236,326" fill="url(#lp-ray)" opacity=".4"/>
-              <polygon points="200,128 228,128 404,326 354,326" fill="url(#lp-ray)" opacity=".28"/>
-            </g>
-            <g class="lit" style="--d:1.15s">
-              <rect x="118" y="140" width="33" height="170" rx="16" fill="#FFD27A" opacity=".24"/>
-              <rect x="132" y="150" width="5" height="150" rx="2.5" fill="#FFC94D"/>
-            </g>
-            <g class="lit" style="--d:0s">
-              <polygon points="164,197 196,197 228,342 132,342" fill="url(#lp-cone)" opacity=".85"/>
-              <ellipse cx="180" cy="342" rx="44" ry="6" fill="#FFE3A0" opacity=".5"/>
-            </g>
-            <g class="lit" style="--d:.25s">
-              <polygon points="226,212 254,212 282,342 198,342" fill="url(#lp-cone)" opacity=".8"/>
-              <ellipse cx="240" cy="342" rx="38" ry="5" fill="#FFE3A0" opacity=".45"/>
-            </g>
-            <g class="lit" style="--d:.5s">
-              <polygon points="270,201 330,201 354,298 246,298" fill="url(#lp-cone)"/>
-              <ellipse cx="300" cy="300" rx="44" ry="4" fill="#FFE9B5" opacity=".9"/>
-            </g>
-            <g class="lit" style="--d:.6s">
-              <path d="M256 306H344" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round"/>
-              <rect x="255" y="307" width="90" height="14" fill="url(#lp-cone)" opacity=".55"/>
-            </g>
-            <g class="lit" style="--d:.75s">
-              <polygon points="348,208 372,208 398,342 322,342" fill="url(#lp-cone)" opacity=".55"/>
-              <ellipse cx="360" cy="342" rx="34" ry="5" fill="#FFE3A0" opacity=".4"/>
-            </g>
-            <g class="lit" style="--d:1s">
-              <polygon points="424,258 456,258 482,348 398,348" fill="url(#lp-cone)" opacity=".7"/>
-              <ellipse cx="440" cy="350" rx="40" ry="5" fill="#FFE3A0" opacity=".45"/>
-            </g>
-
-            <!-- Fixtures -->
-            <g class="room">
-              <path d="M180 128V175M240 128V192M300 128V161M360 128V183" stroke="#1E2B45" stroke-width="1.4"/>
-              <path d="M158 196C158 182 168 174 180 174S202 182 202 196Z" fill="#1E2B45"/>
-              <path d="M158 196H202" stroke="#C9A35B" stroke-width="2" stroke-linecap="round"/>
-              <polygon points="233,192 247,192 256,212 224,212" fill="#C9A35B"/>
-              <path d="M266 200C266 174 282 160 300 160S334 174 334 200Z" fill="#1E2B45"/>
-              <path d="M266 200H334" stroke="#C9A35B" stroke-width="2.5" stroke-linecap="round"/>
-              <rect x="355" y="182" width="10" height="4" rx="1" fill="#C9A35B"/>
-              <circle cx="360" cy="199" r="14" fill="#FFFFFF" stroke="#D5DBE6" stroke-width="1.5"/>
-              <!-- floor lamp -->
-              <path d="M440 258V348" stroke="#1E2B45" stroke-width="2"/>
-              <ellipse cx="440" cy="349" rx="13" ry="3" fill="#1E2B45"/>
-              <polygon points="427,240 453,240 460,258 420,258" fill="#C9A35B"/>
-            </g>
-
-            <!-- 5b · Bulbs & glows switch on in sequence -->
-            <g class="lit" style="--d:0s">
-              <circle cx="180" cy="200" r="38" fill="url(#lp-glow)"/>
-              <ellipse cx="180" cy="197.5" rx="20" ry="2.8" fill="#FFF4CF"/>
-            </g>
-            <g class="lit" style="--d:.25s">
-              <circle cx="240" cy="214" r="30" fill="url(#lp-glow)"/>
-              <ellipse cx="240" cy="213" rx="15" ry="2.4" fill="#FFF4CF"/>
-            </g>
-            <g class="lit" style="--d:.5s">
-              <circle cx="300" cy="204" r="54" fill="url(#lp-glow)"/>
-              <ellipse cx="300" cy="201.5" rx="31" ry="3.4" fill="#FFF4CF"/>
-            </g>
-            <g class="lit" style="--d:.75s">
-              <circle cx="360" cy="199" r="42" fill="url(#lp-glow)"/>
-              <circle cx="360" cy="199" r="13" fill="#FFF1C2"/>
-              <circle cx="360" cy="199" r="5" fill="#FFFFFF"/>
-            </g>
-            <g class="lit" style="--d:1s">
-              <circle cx="440" cy="260" r="34" fill="url(#lp-glow)"/>
-              <ellipse cx="440" cy="258.5" rx="18" ry="2.4" fill="#FFF4CF"/>
-            </g>
-            <g class="lit" style="--d:.1s"><circle cx="120" cy="120" r="9" fill="url(#lp-glow)"/><circle cx="120" cy="120" r="2.4" fill="#FFC94D"/></g>
-            <g class="lit" style="--d:.15s"><circle cx="165" cy="120" r="9" fill="url(#lp-glow)"/><circle cx="165" cy="120" r="2.4" fill="#FFC94D"/></g>
-            <g class="lit" style="--d:.2s"><circle cx="210" cy="120" r="9" fill="url(#lp-glow)"/><circle cx="210" cy="120" r="2.4" fill="#FFC94D"/></g>
-            <g class="lit" style="--d:.25s"><circle cx="255" cy="120" r="9" fill="url(#lp-glow)"/><circle cx="255" cy="120" r="2.4" fill="#FFC94D"/></g>
-            <g class="lit" style="--d:.3s"><circle cx="300" cy="120" r="9" fill="url(#lp-glow)"/><circle cx="300" cy="120" r="2.4" fill="#FFC94D"/></g>
-            <g class="lit" style="--d:.35s"><circle cx="345" cy="120" r="9" fill="url(#lp-glow)"/><circle cx="345" cy="120" r="2.4" fill="#FFC94D"/></g>
-            <g class="lit" style="--d:.4s"><circle cx="390" cy="120" r="9" fill="url(#lp-glow)"/><circle cx="390" cy="120" r="2.4" fill="#FFC94D"/></g>
-            <g class="lit" style="--d:.45s"><circle cx="435" cy="120" r="9" fill="url(#lp-glow)"/><circle cx="435" cy="120" r="2.4" fill="#FFC94D"/></g>
-            <g class="lit" style="--d:.5s"><circle cx="480" cy="120" r="9" fill="url(#lp-glow)"/><circle cx="480" cy="120" r="2.4" fill="#FFC94D"/></g>
-
-            <!-- 6 · Highlight passes across the finished scene -->
-            <rect class="sweep" x="-160" y="20" width="120" height="420" fill="url(#lp-sweep)"/>
-          </g>
-
-          <!-- 3 · Floating UI panels assemble around the showroom -->
-          <g class="float" style="--f:6.5s">
-            <g class="card-in" style="--d:0s">
-              <g transform="translate(14 136)" filter="url(#lp-shadow)">
-                <rect width="128" height="80" rx="14" fill="#FFFFFF" stroke="#E6EAF2"/>
-                <circle cx="24" cy="24" r="12" fill="#FFF4D6"/>
-                <path d="M24 15.5a6.2 6.2 0 0 0-3.6 11.2v2.3h7.2v-2.3A6.2 6.2 0 0 0 24 15.5z" fill="#F59E0B"/>
-                <rect x="21" y="30.4" width="6" height="2" rx="1" fill="#B45309"/>
-                <rect x="44" y="17" width="58" height="6" rx="3" fill="#1F2A44"/>
-                <rect x="44" y="28" width="40" height="5" rx="2.5" fill="#D5DBE6"/>
-                <rect x="14" y="50" width="36" height="18" rx="9" fill="url(#lp-blue)"/>
-                <circle cx="41" cy="59" r="6.5" fill="#FFFFFF"/>
-                <rect x="60" y="56" width="52" height="6" rx="3" fill="#E3E8F2"/>
-              </g>
-            </g>
-          </g>
-          <g class="float" style="--f:7s;--fd:-2s">
-            <g class="card-in" style="--d:.25s">
-              <g transform="translate(470 146)" filter="url(#lp-shadow)">
-                <rect width="120" height="94" rx="14" fill="#FFFFFF" stroke="#E6EAF2"/>
-                <rect x="14" y="14" width="62" height="6" rx="3" fill="#1F2A44"/>
-                <rect x="14" y="26" width="40" height="5" rx="2.5" fill="#D5DBE6"/>
-                <rect x="14" y="45" width="92" height="6" rx="3" fill="#EEF1F6"/>
-                <rect x="14" y="45" width="60" height="6" rx="3" fill="url(#lp-amber)"/>
-                <circle cx="74" cy="48" r="7" fill="#FFFFFF" stroke="#F59E0B" stroke-width="2"/>
-                <circle cx="21" cy="74" r="5" fill="#FFB547"/>
-                <circle cx="37" cy="74" r="5" fill="#FFD98A"/>
-                <circle cx="37" cy="74" r="8.5" fill="none" stroke="#1D4ED8" stroke-width="1.5"/>
-                <circle cx="53" cy="74" r="5" fill="#FFF1D0" stroke="#EADFC6"/>
-                <circle cx="69" cy="74" r="5" fill="#DCE7FF" stroke="#CBD7F2"/>
-                <circle cx="85" cy="74" r="5" fill="#A8C3FF"/>
-              </g>
-            </g>
-          </g>
-          <g class="float" style="--f:6s;--fd:-3.5s">
-            <g class="card-in" style="--d:.5s">
-              <g transform="translate(24 350)" filter="url(#lp-shadow)">
-                <rect width="152" height="64" rx="14" fill="#FFFFFF" stroke="#E6EAF2"/>
-                <rect x="12" y="12" width="40" height="40" rx="10" fill="#FFF4D6"/>
-                <path d="M32 17V25" stroke="#1E2B45" stroke-width="1.4"/>
-                <path d="M22 35C22 28 27 24.5 32 24.5S42 28 42 35Z" fill="#1E2B45"/>
-                <ellipse cx="32" cy="36" rx="8" ry="2" fill="#FFC94D"/>
-                <rect x="62" y="17" width="72" height="6" rx="3" fill="#1F2A44"/>
-                <rect x="62" y="29" width="54" height="5" rx="2.5" fill="#D5DBE6"/>
-                <rect x="62" y="40" width="36" height="5" rx="2.5" fill="#C7D6FF"/>
-              </g>
-            </g>
-          </g>
-          <g class="float m-hide" style="--f:7.5s;--fd:-1s">
-            <g class="card-in" style="--d:.75s">
-              <g transform="translate(432 374)" filter="url(#lp-shadow)">
-                <rect width="140" height="50" rx="14" fill="#FFFFFF" stroke="#E6EAF2"/>
-                <rect x="12" y="15" width="58" height="20" rx="10" fill="url(#lp-blue)"/>
-                <rect x="24" y="23" width="34" height="4" rx="2" fill="#FFFFFF" opacity=".9"/>
-                <rect x="80" y="18" width="46" height="5" rx="2.5" fill="#1F2A44" opacity=".85"/>
-                <rect x="80" y="28" width="32" height="5" rx="2.5" fill="#D5DBE6"/>
-              </g>
-            </g>
-          </g>
-
-          <!-- Small illuminated sparkles -->
-          <g class="spark m-hide" style="--d:0s"><g transform="translate(566 108)"><path d="M0-8L1.8-1.8 8 0 1.8 1.8 0 8-1.8 1.8-8 0-1.8-1.8Z" fill="#F59E0B"/></g></g>
-          <g class="spark m-hide" style="--d:1.2s"><g transform="translate(36 262)"><path d="M0-6L1.4-1.4 6 0 1.4 1.4 0 6-1.4 1.4-6 0-1.4-1.4Z" fill="#2563EB"/></g></g>
-          <g class="spark m-hide" style="--d:2.1s"><g transform="translate(580 300)"><path d="M0-5L1.2-1.2 5 0 1.2 1.2 0 5-1.2 1.2-5 0-1.2-1.2Z" fill="#FBBF24"/></g></g>
-          <g class="spark" style="--d:.6s"><g transform="translate(160 22)"><path d="M0-6L1.4-1.4 6 0 1.4 1.4 0 6-1.4 1.4-6 0-1.4-1.4Z" fill="#F59E0B"/></g></g>
-        </svg>
-      </figure>
+    <div class="topbar-right">
+      <a href="https://www.instagram.com/ledplanetkrr/" target="_blank" rel="noopener"><svg class="icon"><use href="#i-insta"/></svg><span class="topbar-hide-sm">@LEDPLANETKRR</span><span class="sr-only">Instagram</span></a>
+      <a href="https://www.facebook.com/ledplanetkrr" target="_blank" rel="noopener"><svg class="icon"><use href="#i-fb"/></svg><span class="topbar-hide-sm">@LEDPLANETKRR</span><span class="sr-only">Facebook</span></a>
     </div>
-  </main>
-
-  <footer class="site-footer">
-    <div class="wrap">
-      <h2 class="sr-only">Partners &amp; Credits</h2>
-      <div class="footer-bar">
-        <p>&copy; <span id="year">2026</span> LED Planet</p>
-        <p>Marketing by <strong>SIGARAM</strong> &middot; Built by <a href="https://aalvinai.in" target="_blank" rel="noopener noreferrer"><span>Aalvinai Technologies</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg><span class="sr-only">(opens in a new tab)</span></a></p>
-      </div>
-    </div>
-  </footer>
+  </div>
 </div>
 
-<script>
-  /* Progressive enhancement only — the page is complete without JavaScript. */
-  (function () {
-    var year = document.getElementById("year");
-    if (year) year.textContent = String(new Date().getFullYear());
+<header class="nav" id="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="LED PLANET home">
+      <img src="images/logo.jpg" alt="" width="46" height="46">
+      <span>
+        <span class="brand-name"><span class="wm"><svg viewBox="0 0 856.9 100" aria-hidden="true" focusable="false"><use href="#wm"/></svg><span class="sr-only">LED PLANET</span></span></span>
+        <span class="brand-tag">Exclusive Lighting Solutions</span>
+      </span>
+    </a>
+    <nav class="nav-links" aria-label="Main">
+      <a href="#top">Home</a>
+      <a href="#categories">Categories</a>
+      <a href="#products">Products</a>
+      <a href="#about">About</a>
+      <a href="#team">Team</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="btn btn-amber nav-cta" type="button" data-wa="Hello LED PLANET, I would like to enquire about your lighting products.">Enquire Now</button>
+    <button class="menu-btn" id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+      <svg class="icon"><use href="#i-menu"/></svg>
+    </button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <nav aria-label="Mobile">
+      <a href="#top">Home</a>
+      <a href="#categories">Categories</a>
+      <a href="#products">Products</a>
+      <a href="#about">About</a>
+      <a href="#team">Team</a>
+      <a href="#contact">Contact</a>
+      <button class="btn btn-amber" type="button" data-wa="Hello LED PLANET, I would like to enquire about your lighting products.">Enquire Now</button>
+    </nav>
+  </div>
+</header>
 
-    /* Pause the illustration loop while it is off-screen or the tab is hidden (saves battery). */
-    var art = document.querySelector(".art");
-    var page = document.querySelector(".page");
-    if (art && "IntersectionObserver" in window) {
-      new IntersectionObserver(function (entries) {
-        entries.forEach(function (entry) { art.classList.toggle("is-paused", !entry.isIntersecting); });
-      }).observe(art);
-    }
-    document.addEventListener("visibilitychange", function () {
-      if (page) page.classList.toggle("is-hidden", document.hidden);
+<main id="main">
+
+<section class="hero" aria-labelledby="hero-title">
+  <div class="wrap">
+    <div class="reveal">
+      <p class="hero-tamil" lang="ta">எல் இ டி பிளானட்</p>
+      <h1 class="eyebrow" id="hero-title"><span><span class="wm"><svg viewBox="0 0 856.9 100" aria-hidden="true" focusable="false"><use href="#wm"/></svg><span class="sr-only">LED PLANET</span></span> · LED &amp; Lighting Shop in Karur</span></h1>
+      <p class="h1 hero-tagline">Illuminate Your World.</p>
+      <p class="hero-text"><span class="wm"><svg viewBox="0 0 856.9 100" aria-hidden="true" focusable="false"><use href="#wm"/></svg><span class="sr-only">LED PLANET</span></span> is an LED and lighting shop on Bharathi Nagar Main Road, Karur. We provide all kinds of LED lighting and smart solutions for home, residential and commercial projects, from LED bulbs and tube lights to statement hanging lights, chandeliers and decorative lamps.</p>
+      <div class="hero-actions">
+        <a class="btn btn-amber" href="#products">Explore Collection <svg class="icon"><use href="#i-arrow"/></svg></a>
+        <button class="btn btn-ghost" type="button" data-wa="Hello LED PLANET, I would like to enquire about your lighting products."><svg class="icon"><use href="#i-wa"/></svg>Enquire on WhatsApp</button>
+      </div>
+      <p class="hero-note"><svg class="icon"><use href="#i-bulb"/></svg>Lighting for modern spaces and everyday living.</p>
+    </div>
+    <div class="hero-media reveal">
+      <img src="images/hero-pendants.jpg" alt="Warm brass pendant lights hanging at different heights" width="1000" height="1500" fetchpriority="high">
+      <div class="hero-card">
+        <img src="images/logo.jpg" alt="" width="46" height="46">
+        <div>
+          <strong>Visit our showroom</strong>
+          <span>51/3,4, Bharathi Nagar Main Road, Karur – 639002</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="led-stripe" aria-hidden="true"></div>
+
+<section class="section" aria-labelledby="projects-title">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">What we light up</p>
+      <h2 class="h2" id="projects-title">Lighting for Every Project</h2>
+      <p class="lede">From a single room to a full building, we supply LED lighting and smart solutions sized to the job.</p>
+    </div>
+    <div class="projects reveal">
+      <article class="project">
+        <div class="badge"><svg class="icon"><use href="#i-home"/></svg></div>
+        <h3 class="h3">Home</h3>
+        <p>Living rooms, bedrooms, kitchens and pooja rooms: everyday LED lights alongside decorative pendants, lamps and chandeliers.</p>
+      </article>
+      <article class="project">
+        <div class="badge"><svg class="icon"><use href="#i-building"/></svg></div>
+        <h3 class="h3">Residential Projects</h3>
+        <p>Lighting for apartments, villas and new houses, including panel lights, downlights and wall lights for every floor.</p>
+      </article>
+      <article class="project">
+        <div class="badge"><svg class="icon"><use href="#i-store"/></svg></div>
+        <h3 class="h3">Commercial Projects</h3>
+        <p>Shops, showrooms, offices and workspaces that need bright, even and efficient LED lighting.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="categories" style="background:var(--surface)" aria-labelledby="cat-title">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">Categories</p>
+      <h2 class="h2" id="cat-title">Explore Our Lighting Collection</h2>
+      <p class="lede">Find the right lighting for your space, style and needs. Pick a category to see matching products.</p>
+    </div>
+    <div class="cat-grid" id="categoryGrid">
+      <a class="card cat-card reveal" href="#products" data-category="pendant">
+        <div class="zoom"><img src="images/cat-pendant.jpg" alt="Black cylinder pendant lights with a warm glow" width="800" height="600" loading="lazy" decoding="async"></div>
+        <div class="cat-body">
+          <h3 class="h3">Hanging &amp; Pendant Lights</h3>
+          <p>Statement pendants and hanging fixtures for dining tables, living rooms, staircases and entryways.</p>
+          <span class="cat-link">Explore Category <svg class="icon"><use href="#i-arrow"/></svg></span>
+        </div>
+      </a>
+      <a class="card cat-card reveal" href="#products" data-category="chandelier">
+        <div class="zoom"><img src="images/cat-chandelier.jpg" alt="Crystal drum chandelier above a dining table" width="800" height="533" loading="lazy" decoding="async"></div>
+        <div class="cat-body">
+          <h3 class="h3">Chandeliers &amp; Decorative Ceiling Lights</h3>
+          <p>Eye-catching ceiling centrepieces for living rooms, halls and special spaces.</p>
+          <span class="cat-link">Explore Category <svg class="icon"><use href="#i-arrow"/></svg></span>
+        </div>
+      </a>
+      <a class="card cat-card reveal" href="#products" data-category="lamps">
+        <div class="zoom"><img src="images/cat-lamps.jpg" alt="Black floor lamp beside a sofa and dresser" width="800" height="534" loading="lazy" decoding="async"></div>
+        <div class="cat-body">
+          <h3 class="h3">Decorative Lamps</h3>
+          <p>Floor lamps, table lamps and accent lighting that add warmth to any room.</p>
+          <span class="cat-link">Explore Category <svg class="icon"><use href="#i-arrow"/></svg></span>
+        </div>
+      </a>
+      <a class="card cat-card reveal" href="#products" data-category="led">
+        <div class="zoom"><img src="images/cat-led.jpg" alt="Glowing blue LED strip light" width="800" height="533" loading="lazy" decoding="async"></div>
+        <div class="cat-body">
+          <h3 class="h3">LED Bulbs &amp; Tube Lights</h3>
+          <p>Everyday LED bulbs, tube lights and strip lights for homes, shops and offices.</p>
+          <span class="cat-link">Explore Category <svg class="icon"><use href="#i-arrow"/></svg></span>
+        </div>
+      </a>
+      <a class="card cat-card reveal" href="#products" data-category="panel">
+        <div class="zoom"><img src="images/cat-panel.jpg" alt="Round LED panel lights and downlights on a ceiling" width="800" height="533" loading="lazy" decoding="async"></div>
+        <div class="cat-body">
+          <h3 class="h3">Panel Lights &amp; Downlights</h3>
+          <p>Clean, even lighting for ceilings, false ceilings and commercial spaces.</p>
+          <span class="cat-link">Explore Category <svg class="icon"><use href="#i-arrow"/></svg></span>
+        </div>
+      </a>
+      <a class="card cat-card reveal" href="#products" data-category="wall">
+        <div class="zoom"><img src="images/cat-wall.jpg" alt="Modern black and copper wall light" width="800" height="533" loading="lazy" decoding="async"></div>
+        <div class="cat-body">
+          <h3 class="h3">Wall &amp; Accent Lights</h3>
+          <p>Wall-mounted fixtures and accent lighting for hallways, bedrooms and reading corners.</p>
+          <span class="cat-link">Explore Category <svg class="icon"><use href="#i-arrow"/></svg></span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="products" aria-labelledby="prod-title">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">Catalogue</p>
+      <h2 class="h2" id="prod-title">Find Your Perfect Light</h2>
+      <p class="lede">A sample of the lighting styles we carry. Stock and prices change often, so tap Enquire and we'll confirm availability and price on WhatsApp.</p>
+    </div>
+    <div class="toolbar">
+      <label class="search">
+        <span class="sr-only">Search products</span>
+        <svg class="icon"><use href="#i-search"/></svg>
+        <input class="input" id="productSearch" type="search" placeholder="Search products…" autocomplete="off">
+      </label>
+      <div class="chips" id="categoryChips" role="group" aria-label="Filter by category"></div>
+    </div>
+    <div class="prod-grid" id="productGrid" aria-live="polite"></div>
+    <p class="no-results" id="noResults" hidden>No products match your search. Try another name or pick a different category.</p>
+  </div>
+</section>
+
+<section class="section" id="about" style="background:var(--surface)" aria-labelledby="about-title">
+  <div class="wrap about-grid">
+    <figure class="about-photo reveal" style="margin:0">
+      <img src="images/storefront.jpg" alt="LED PLANET showroom front on Bharathi Nagar Main Road, Karur, with its blue signboard" width="706" height="444" loading="lazy">
+      <figcaption>Our showroom on Bharathi Nagar Main Road, Karur.</figcaption>
+    </figure>
+    <div class="about-text reveal">
+      <p class="eyebrow">About Us</p>
+      <h2 class="h2" id="about-title">Lighting That Fits Your Space</h2>
+      <p class="muted" style="margin-top:16px"><span class="wm"><svg viewBox="0 0 856.9 100" aria-hidden="true" focusable="false"><use href="#wm"/></svg><span class="sr-only">LED PLANET</span></span> is a lighting showroom in Karur offering exclusive lighting solutions. We provide all kinds of LED lighting and smart solutions for home, residential and commercial projects.</p>
+      <p class="muted">Walk in to see our range of hanging lights, chandeliers, decorative lamps, panel lights and everyday LED lighting, or message us on WhatsApp to ask about a specific product.</p>
+      <div class="facts">
+        <div class="fact"><svg class="icon"><use href="#i-bulb"/></svg><div><strong>All kinds of LED lighting</strong><span>Everyday and decorative</span></div></div>
+        <div class="fact"><svg class="icon"><use href="#i-chip"/></svg><div><strong>Smart solutions</strong><span>For modern homes and projects</span></div></div>
+        <div class="fact"><svg class="icon"><use href="#i-chat"/></svg><div><strong>Easy enquiries</strong><span>Price and stock on WhatsApp</span></div></div>
+        <div class="fact"><svg class="icon"><use href="#i-pin"/></svg><div><strong>Visit our showroom</strong><span>Bharathi Nagar, Karur</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="quote" aria-label="Quote">
+  <div class="wrap reveal">
+    <span class="quote-mark" aria-hidden="true">“</span>
+    <blockquote>We are all born with a divine fire in us. Our efforts should be to give wings to this fire and fill the world with the glow of its goodness.</blockquote>
+    <cite>Dr. A.P.J. Abdul Kalam</cite>
+    <small>The words that greet visitors above our showroom entrance.</small>
+  </div>
+</section>
+<div class="led-stripe" aria-hidden="true"></div>
+
+<section class="section" id="team" aria-labelledby="team-title">
+  <div class="wrap">
+    <div class="section-head reveal" style="margin-inline:auto;text-align:center">
+      <p class="eyebrow">Our Team</p>
+      <h2 class="h2" id="team-title">The People Behind <span class="wm"><svg viewBox="0 0 856.9 100" aria-hidden="true" focusable="false"><use href="#wm"/></svg><span class="sr-only">LED PLANET</span></span></h2>
+      <p class="lede" style="margin-inline:auto">Meet the co-founders of <span class="wm"><svg viewBox="0 0 856.9 100" aria-hidden="true" focusable="false"><use href="#wm"/></svg><span class="sr-only">LED PLANET</span></span>.</p>
+    </div>
+    <div class="team-grid reveal">
+      <article class="card member">
+        <img src="images/team-sathishkumar.jpg" alt="B Sathishkumar, Co-Founder of LED PLANET" width="490" height="612" loading="lazy">
+        <h3>B Sathishkumar</h3>
+        <p>Co-Founder</p>
+      </article>
+      <article class="card member">
+        <img src="images/team-karthikeyan.jpg" alt="CP Karthikeyan, Co-Founder of LED PLANET" width="544" height="680" loading="lazy">
+        <h3>CP Karthikeyan</h3>
+        <p>Co-Founder</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="karur" style="background:var(--surface)" aria-labelledby="karur-title">
+  <div class="wrap karur-grid">
+    <div class="reveal">
+      <p class="eyebrow">Visit Us</p>
+      <h2 class="h2" id="karur-title">Your LED Light Shop in Karur</h2>
+      <p class="lede">Looking for an LED shop in Karur or an LED light shop near you? <span class="wm"><svg viewBox="0 0 856.9 100" aria-hidden="true" focusable="false"><use href="#wm"/></svg><span class="sr-only">LED PLANET</span></span> is on Bharathi Nagar Main Road, Karur – 639002, behind Max showroom and opposite V Care. Walk in to see LED bulbs, tube lights, panel lights, downlights, hanging lights, chandeliers, decorative lamps and wall lights in person, or ask us on WhatsApp before you visit.</p>
+      <h3 class="h3" style="margin-top:28px">Easy to reach from across Karur district</h3>
+      <ul class="areas" aria-label="Places in Karur district">
+        <li>Karur</li><li>Pugalur</li><li>Kulithalai</li><li>Krishnarayapuram</li><li>Aravakurichi</li><li>Manmangalam</li><li>Kadavur</li>
+      </ul>
+      <div class="contact-actions">
+        <a class="btn btn-brand" href="https://maps.app.goo.gl/dqZphdJS6tNqA3Sz9" target="_blank" rel="noopener"><svg class="icon"><use href="#i-nav"/></svg>Get Directions</a>
+        <a class="btn btn-line" href="tel:+919894959523"><svg class="icon"><use href="#i-phone"/></svg>Call +91 98949 59523</a>
+      </div>
+    </div>
+    <div class="karur-ta reveal" lang="ta">
+      <h3 class="h3">கரூரில் எல்இடி விளக்கு கடை</h3>
+      <p>கரூரில் எல்இடி விளக்குகள் வாங்க வேண்டுமா? <span class="wm"><svg viewBox="0 0 856.9 100" aria-hidden="true" focusable="false"><use href="#wm"/></svg><span class="sr-only">LED PLANET</span></span> (எல் இ டி பிளானட்) பாரதி நகர் மெயின் ரோடு, கரூர் – 639002 என்ற முகவரியில் உள்ளது (மேக்ஸ் ஷோரூம் பின்புறம், வி கேர் எதிரில்).</p>
+      <p>எல்இடி பல்புகள், டியூப் லைட்டுகள், பேனல் லைட்டுகள், தொங்கும் விளக்குகள், சாண்டிலியர்கள், அலங்கார விளக்குகள் மற்றும் சுவர் விளக்குகள் கிடைக்கும்.</p>
+      <p>அழைக்க / வாட்ஸ்அப்: <a href="tel:+919894959523">+91 98949 59523</a></p>
+      <button class="btn btn-wa" type="button" data-wa="Hello LED PLANET, I would like to enquire about your lighting products." style="margin-top:16px"><svg class="icon"><use href="#i-wa"/></svg>WhatsApp</button>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="faq" aria-labelledby="faq-title">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">FAQ</p>
+      <h2 class="h2" id="faq-title">Frequently Asked Questions</h2>
+    </div>
+    <h3 class="faq-group">About our LED shop in Karur</h3>
+    <div class="faq-list" id="faqList">
+      <details class="faq reveal">
+        <summary><span>Which is the best LED shop in Karur?</span><svg class="icon"><use href="#i-chev"/></svg></summary>
+        <p class="faq-body">The best shop is the one that has the right light for you, so come and compare for yourself. <span class="wm"><svg viewBox="0 0 856.9 100" aria-hidden="true" focusable="false"><use href="#wm"/></svg><span class="sr-only">LED PLANET</span></span> on Bharathi Nagar Main Road, Karur is a dedicated LED and lighting showroom where you can see LED bulbs, tube lights, panel lights, hanging lights, chandeliers and decorative lamps in person, and ask our team which one suits your room or project.</p>
+      </details>
+      <details class="faq reveal">
+        <summary><span>Is there an LED shop near me in Karur?</span><svg class="icon"><use href="#i-chev"/></svg></summary>
+        <p class="faq-body">If you're in or around Karur, <span class="wm"><svg viewBox="0 0 856.9 100" aria-hidden="true" focusable="false"><use href="#wm"/></svg><span class="sr-only">LED PLANET</span></span> is on Bharathi Nagar Main Road, Karur – 639002, behind Max showroom and opposite V Care. Tap Get Directions in the Contact section to open the route in Google Maps, or call +91 98949 59523.</p>
+      </details>
+      <details class="faq reveal">
+        <summary><span>Where can I buy LED bulbs and tube lights in Karur?</span><svg class="icon"><use href="#i-chev"/></svg></summary>
+        <p class="faq-body">At <span class="wm"><svg viewBox="0 0 856.9 100" aria-hidden="true" focusable="false"><use href="#wm"/></svg><span class="sr-only">LED PLANET</span></span>, Bharathi Nagar Main Road, Karur. We provide everyday LED bulbs, tube lights, strip lights, panel lights and downlights for homes, shops and offices. Message us on WhatsApp to check a specific wattage or model before you visit.</p>
+      </details>
+      <details class="faq reveal">
+        <summary><span>What types of lighting products are available?</span><svg class="icon"><use href="#i-chev"/></svg></summary>
+        <p class="faq-body">We provide all kinds of LED lighting and smart solutions, including LED bulbs and tube lights, hanging and pendant lights, chandeliers, decorative lamps, panel lights, downlights and wall lights. Browse the catalogue above, or message us for what's in stock right now.</p>
+      </details>
+      <details class="faq reveal">
+        <summary><span>How can I enquire about a product's price?</span><svg class="icon"><use href="#i-chev"/></svg></summary>
+        <p class="faq-body">Prices aren't listed online because they depend on the model and quantity. Tap “Enquire” on any product or message us on WhatsApp at +91 98949 59523 with the product name, and we'll share the price.</p>
+      </details>
+      <details class="faq reveal">
+        <summary><span>How can I check product availability?</span><svg class="icon"><use href="#i-chev"/></svg></summary>
+        <p class="faq-body">Stock changes often, so please message us on WhatsApp or call +91 98949 59523 to confirm availability before you visit.</p>
+      </details>
+      <details class="faq reveal">
+        <summary><span>Where is <span class="wm"><svg viewBox="0 0 856.9 100" aria-hidden="true" focusable="false"><use href="#wm"/></svg><span class="sr-only">LED PLANET</span></span> located?</span><svg class="icon"><use href="#i-chev"/></svg></summary>
+        <p class="faq-body">Our showroom is at 51/3,4, Bharathi Nagar Main Road, Karur – 639002, behind Max showroom and opposite V Care. Use the Get Directions button in the Contact section to open it in Google Maps.</p>
+      </details>
+      <details class="faq reveal">
+        <summary><span>Do you handle residential and commercial projects?</span><svg class="icon"><use href="#i-chev"/></svg></summary>
+        <p class="faq-body">Yes. We supply LED lighting and smart solutions for homes, residential projects and commercial projects. Share your requirement on WhatsApp and our team will get back to you.</p>
+      </details>
+      <details class="faq reveal">
+        <summary><span>How can I find out about product warranties?</span><svg class="icon"><use href="#i-chev"/></svg></summary>
+        <p class="faq-body">Warranty terms depend on the product and brand. Ask us about the specific product you're interested in and we'll explain its warranty before you buy.</p>
+      </details>
+      <details class="faq reveal">
+        <summary><span>How can I contact the shop?</span><svg class="icon"><use href="#i-chev"/></svg></summary>
+        <p class="faq-body">Call or WhatsApp +91 98949 59523, follow us on Instagram and Facebook at @LEDPLANETKRR, or visit the showroom in Bharathi Nagar, Karur.</p>
+      </details>
+    </div>
+    <h3 class="faq-group" id="led-guide">LED lighting guide</h3>
+    <p class="lede">Quick answers to common questions about choosing LED lights.</p>
+    <div class="faq-list">
+      <details class="faq reveal">
+        <summary><span>Which LED bulb is best for home use?</span><svg class="icon"><use href="#i-chev"/></svg></summary>
+        <p class="faq-body">Choose by brightness, colour and the room. Brightness is measured in lumens: a 9–10 W LED bulb gives roughly 800–900 lumens, about the same as an old 60 W bulb. Warm white (2700–3000 K) feels cosy in bedrooms and living rooms, while cool daylight (5700–6500 K) suits kitchens, study tables and shops. Also check the pack for the BIS registration mark, which carries an R-number.</p>
+      </details>
+      <details class="faq reveal">
+        <summary><span>How many watts of LED light do I need for a room?</span><svg class="icon"><use href="#i-chev"/></svg></summary>
+        <p class="faq-body">Think in lumens rather than watts. As a rough guide, plan about 10–20 lumens per square foot for general room lighting, and more for kitchens and work areas. A 10 × 12 ft bedroom (120 sq ft) is comfortable with roughly 1,200–2,400 lumens, for example one 15–18 W LED panel or two 12 W LED bulbs.</p>
+      </details>
+      <details class="faq reveal">
+        <summary><span>Warm white, neutral white or cool white: which should I choose?</span><svg class="icon"><use href="#i-chev"/></svg></summary>
+        <p class="faq-body">Colour temperature is measured in kelvin (K). Warm white (about 2700–3000 K) gives a soft yellowish light for bedrooms, living rooms and pooja rooms. Neutral white (about 4000 K) looks natural and works almost anywhere. Cool white or daylight (about 5700–6500 K) is crisp and bright, good for kitchens, offices and shops.</p>
+      </details>
+      <details class="faq reveal">
+        <summary><span>How much electricity do LED lights save?</span><svg class="icon"><use href="#i-chev"/></svg></summary>
+        <p class="faq-body">LED bulbs use roughly 80–90% less electricity than old filament bulbs for the same light, and about a third less than CFLs. An 18–20 W LED tube light gives similar light to a 36–40 W fluorescent tube light, at about half the power.</p>
+      </details>
+      <details class="faq reveal">
+        <summary><span>How long do LED lights last?</span><svg class="icon"><use href="#i-chev"/></svg></summary>
+        <p class="faq-body">Good-quality LED bulbs and tube lights are commonly rated for about 15,000–25,000 hours. At 8 hours a day, 15,000 hours is roughly five years. Heat, fully enclosed fittings and frequent voltage fluctuations can shorten their life.</p>
+      </details>
+      <details class="faq reveal">
+        <summary><span>Do LED lights work with voltage fluctuations and home inverters?</span><svg class="icon"><use href="#i-chev"/></svg></summary>
+        <p class="faq-body">Many LED bulbs and tube lights are designed to work over a wide voltage range and run on home inverters. Check the voltage range printed on the pack, and use surge protection or a stabiliser if your area has frequent fluctuations.</p>
+      </details>
+      <details class="faq reveal">
+        <summary><span>Which lights should I use in bathrooms and outdoors?</span><svg class="icon"><use href="#i-chev"/></svg></summary>
+        <p class="faq-body">Check the IP rating on the light. IP44 or higher handles splashes in bathrooms, and IP65 or higher is recommended for outdoor lights exposed to rain and dust.</p>
+      </details>
+      <details class="faq reveal">
+        <summary><span>Can LED lights be dimmed?</span><svg class="icon"><use href="#i-chev"/></svg></summary>
+        <p class="faq-body">Only if the bulb or fitting is marked dimmable and you use a dimmer made for LEDs. Non-dimmable LEDs on a dimmer may flicker, buzz or fail early.</p>
+      </details>
+      <details class="faq reveal">
+        <summary><span>What is CRI and why does it matter?</span><svg class="icon"><use href="#i-chev"/></svg></summary>
+        <p class="faq-body">CRI (colour rendering index) shows how naturally a light displays colours, on a scale up to 100. CRI 80 or above is fine for most homes. CRI 90 or above is better where colours matter, such as clothing and textile showrooms, dressing areas and artwork.</p>
+      </details>
+      <details class="faq reveal">
+        <summary><span>What is the difference between panel lights, downlights and tube lights?</span><svg class="icon"><use href="#i-chev"/></svg></summary>
+        <p class="faq-body">Panel lights are slim square or round fittings, often set into false ceilings, that spread light evenly over a room. Downlights are smaller recessed lights that throw light downwards, used in rows or to highlight an area. Tube lights and battens are long fittings mounted on walls or ceilings, common in homes, shops and offices.</p>
+      </details>
+      <details class="faq reveal">
+        <summary><span>What size chandelier or hanging light suits my room?</span><svg class="icon"><use href="#i-chev"/></svg></summary>
+        <p class="faq-body">A common rule of thumb: add the room's length and width in feet, and use that number in inches as the chandelier's diameter. A 12 × 14 ft room suits a chandelier about 26 inches wide. Over a dining table, hang it so the bottom is about 30–36 inches above the tabletop.</p>
+      </details>
+      <details class="faq reveal">
+        <summary><span>What is smart lighting?</span><svg class="icon"><use href="#i-chev"/></svg></summary>
+        <p class="faq-body">Smart lighting lets you switch lights on and off, dim them or change their colour from a phone app, voice assistant, remote or timer. Smart bulbs fit standard holders, so many setups need no rewiring. Ask us which smart lighting options suit your home or project.</p>
+      </details>
+    </div>
+    <div class="guide-cta reveal">
+      <p>Not sure which light to choose? Send us a photo of your room on WhatsApp and ask.</p>
+      <button class="btn btn-wa" type="button" data-wa="Hello LED PLANET, I need help choosing lights for my room."><svg class="icon"><use href="#i-wa"/></svg>Ask on WhatsApp</button>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="contact" style="background:var(--surface)" aria-labelledby="contact-title">
+  <div class="wrap contact-grid">
+    <div class="reveal">
+      <p class="eyebrow">Contact</p>
+      <h2 class="h2" id="contact-title">Looking for the Right Lighting?</h2>
+      <p class="lede">Tell us which lighting product you're interested in, and contact our team for more information.</p>
+      <div class="contact-list">
+        <div class="contact-item">
+          <div class="ico"><svg class="icon"><use href="#i-phone"/></svg></div>
+          <div><strong>Phone / WhatsApp</strong><a class="link" href="tel:+919894959523">+91 98949 59523</a></div>
+        </div>
+        <div class="contact-item">
+          <div class="ico"><svg class="icon"><use href="#i-pin"/></svg></div>
+          <div>
+            <strong>Showroom Address</strong>
+            <span>51/3,4, Bharathi Nagar Main Road, Karur – 639002, Tamil Nadu</span><br>
+            <span>Landmark: Behind Max showroom, opposite V Care</span>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="ico"><svg class="icon"><use href="#i-insta"/></svg></div>
+          <div><strong>Instagram</strong><a class="link" href="https://www.instagram.com/ledplanetkrr/" target="_blank" rel="noopener">@LEDPLANETKRR</a></div>
+        </div>
+        <div class="contact-item">
+          <div class="ico"><svg class="icon"><use href="#i-fb"/></svg></div>
+          <div><strong>Facebook</strong><a class="link" href="https://www.facebook.com/ledplanetkrr" target="_blank" rel="noopener">@LEDPLANETKRR</a></div>
+        </div>
+      </div>
+      <div class="contact-actions">
+        <button class="btn btn-wa" type="button" data-wa="Hello LED PLANET, I would like to know more about your products."><svg class="icon"><use href="#i-wa"/></svg>Chat on WhatsApp</button>
+        <a class="btn btn-line" href="https://maps.app.goo.gl/dqZphdJS6tNqA3Sz9" target="_blank" rel="noopener"><svg class="icon"><use href="#i-nav"/></svg>Get Directions</a>
+      </div>
+      <div class="map">
+        <iframe src="https://maps.google.com/maps?q=Solar+Galaxy,+MAX+SHOWROOM+Backside,+51/5,+Bharathi+Nagar+Main+Rd,+Karur,+Tamil+Nadu+639002&amp;ftid=0x3baa2f1ac54c417d:0xcd5568c16b44a8c3&amp;z=17&amp;output=embed" title="Map showing LED PLANET, Bharathi Nagar Main Road, Karur" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+
+    <form class="card form reveal" id="contactForm" action="https://api.web3forms.com/submit" method="POST" novalidate>
+      <input type="hidden" name="access_key" value="2b00206f-5843-4989-881c-64254436389e">
+      <input type="hidden" name="subject" value="New enquiry from the LED PLANET website">
+      <input type="hidden" name="from_name" value="LED PLANET Website">
+      <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" style="display:none" aria-hidden="true">
+      <h3>Send an Enquiry</h3>
+      <p class="muted">Fill this in and our team will get back to you. You can also send the same enquiry on WhatsApp.</p>
+      <div class="field">
+        <label for="cf-name">Your name *</label>
+        <input class="input" id="cf-name" name="name" autocomplete="name" required>
+        <p class="err">Please enter your name.</p>
+      </div>
+      <div class="field">
+        <label for="cf-phone">Phone number *</label>
+        <input class="input" id="cf-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required>
+        <p class="err">Please enter a valid phone number (at least 10 digits).</p>
+      </div>
+      <div class="field">
+        <label for="cf-email">Email (optional)</label>
+        <input class="input" id="cf-email" name="email" type="email" inputmode="email" autocomplete="email">
+        <p class="err">Please enter a valid email address or leave it empty.</p>
+      </div>
+      <div class="field">
+        <label for="cf-category">Product or category of interest</label>
+        <select class="input" id="cf-category" name="category">
+          <option value="">Choose a category (optional)</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="cf-message">Message</label>
+        <textarea class="input" id="cf-message" name="message" placeholder="Tell us what you're looking for, e.g. the room, size or style."></textarea>
+      </div>
+      <button class="btn btn-brand" type="submit" id="submitBtn">Send Enquiry</button>
+      <button class="btn btn-line" type="button" id="waFormBtn" style="margin-top:10px"><svg class="icon"><use href="#i-wa"/></svg>Send on WhatsApp instead</button>
+      <p class="form-note" id="formNote" role="status">Your details are only used to reply to your enquiry.</p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="#top" aria-label="LED PLANET home">
+          <img src="images/logo.jpg" alt="" width="46" height="46" loading="lazy">
+          <span><span class="brand-name"><span class="wm"><svg viewBox="0 0 856.9 100" aria-hidden="true" focusable="false"><use href="#wm"/></svg><span class="sr-only">LED PLANET</span></span></span><span class="brand-tag">Exclusive Lighting Solutions</span></span>
+        </a>
+        <p class="footer-about">All kinds of LED lighting and smart solutions for home, residential and commercial projects, from our showroom in Karur.</p>
+        <div class="socials">
+          <a href="https://www.instagram.com/ledplanetkrr/" target="_blank" rel="noopener" aria-label="LED PLANET on Instagram"><svg class="icon"><use href="#i-insta"/></svg></a>
+          <a href="https://www.facebook.com/ledplanetkrr" target="_blank" rel="noopener" aria-label="LED PLANET on Facebook"><svg class="icon"><use href="#i-fb"/></svg></a>
+          <button type="button" data-wa="Hello LED PLANET, I would like to enquire about your lighting products." aria-label="Chat with LED PLANET on WhatsApp" style="width:40px;height:40px;border-radius:10px;background:rgba(255,255,255,.08);display:flex;align-items:center;justify-content:center;color:#fff"><svg class="icon"><use href="#i-wa"/></svg></button>
+        </div>
+      </div>
+      <div>
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#top">Home</a></li>
+          <li><a href="#categories">Categories</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#karur">LED Shop in Karur</a></li>
+          <li><a href="#led-guide">LED Lighting Guide</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Categories</h3>
+        <ul id="footerCategories">
+          <li><a href="#products" data-category="pendant">Hanging &amp; Pendant Lights</a></li>
+          <li><a href="#products" data-category="chandelier">Chandeliers &amp; Decorative Ceiling Lights</a></li>
+          <li><a href="#products" data-category="lamps">Decorative Lamps</a></li>
+          <li><a href="#products" data-category="led">LED Bulbs &amp; Tube Lights</a></li>
+          <li><a href="#products" data-category="panel">Panel Lights &amp; Downlights</a></li>
+          <li><a href="#products" data-category="wall">Wall &amp; Accent Lights</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <ul>
+          <li><a href="tel:+919894959523">+91 98949 59523</a></li>
+          <li>51/3,4, Bharathi Nagar Main Road, Karur – 639002, Tamil Nadu</li>
+          <li><a href="https://maps.app.goo.gl/dqZphdJS6tNqA3Sz9" target="_blank" rel="noopener">Open in Google Maps</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year">2026</span> <span class="wm"><svg viewBox="0 0 856.9 100" aria-hidden="true" focusable="false"><use href="#wm"/></svg><span class="sr-only">LED PLANET</span></span>, Karur. All rights reserved.</span>
+      <span>Developed by AALVINAI TECHNOLOGIES</span>
+    </div>
+  </div>
+</footer>
+
+<button class="wa-fab" type="button" data-wa="Hello LED PLANET, I would like to enquire about your lighting products." aria-label="Chat with LED PLANET on WhatsApp">
+  <svg viewBox="0 0 24 24"><use href="#i-wa"/></svg>
+</button>
+
+<dialog id="productModal" aria-labelledby="modalTitle">
+  <div class="modal-head">
+    <span>Product Details</span>
+    <button class="modal-close" type="button" data-close-modal aria-label="Close"><svg class="icon"><use href="#i-x"/></svg></button>
+  </div>
+  <div class="modal-body" id="modalBody"></div>
+</dialog>
+
+<script>
+// Phone, address, map and social links are written directly in the HTML above so that
+// search engines and link previews can read them without running this script.
+const SITE = { whatsappNumber: "919894959523" };
+
+// Sample products with stock photos. Replace with real stock, photos and (optional) prices.
+const PRODUCTS = [
+  { id:1, name:"Modern Hanging Pendant",        category:"pendant",    image:"images/product-pendant-white.jpg", desc:"A clean single-drop pendant light that works well over dining tables or in living spaces." },
+  { id:2, name:"Industrial Dome Pendant",       category:"pendant",    image:"images/product-pendant-gray.jpg",  desc:"A classic dome-shaped pendant with a visible bulb, suited to dining and workspace settings." },
+  { id:3, name:"Decorative Ceiling Chandelier", category:"chandelier", image:"images/cat-chandelier.jpg",        desc:"A layered ceiling chandelier that makes a strong visual statement in living and dining rooms." },
+  { id:4, name:"Ceramic Table Lamp",            category:"lamps",      image:"images/product-table-lamp.jpg",    desc:"A decorative ceramic table lamp with a fabric shade that gives soft, warm light on a bedside or side table." },
+  { id:5, name:"LED Strip Light",               category:"led",        image:"images/cat-led.jpg",               desc:"Flexible LED strip lighting for accenting shelves, false ceilings and display areas." },
+  { id:6, name:"LED Panel / Downlight",         category:"panel",      image:"images/cat-panel.jpg",             desc:"Recessed ceiling lighting for even, glare-free illumination in homes and offices." },
+  { id:7, name:"Modern Twist Wall Light",       category:"wall",       image:"images/cat-wall.jpg",              desc:"A sleek wall-mounted light with a curved metal shade that adds accent lighting to hallways and bedrooms." },
+  { id:8, name:"Vintage Double-Arm Sconce",     category:"wall",       image:"images/product-wall-vintage.jpg",  desc:"A decorative two-arm wall sconce that brings a classic, ornate touch to a room." }
+];
+
+let activeCategory = "all";
+const $ = (sel, root = document) => root.querySelector(sel);
+const $$ = (sel, root = document) => Array.from(root.querySelectorAll(sel));
+// Category names come from the category cards in the HTML.
+const CATEGORIES = $$("#categoryGrid [data-category]").map(el => ({ id: el.dataset.category, name: el.querySelector("h3").textContent }));
+const esc = s => String(s).replace(/[&<>"']/g, c => ({ "&":"&amp;", "<":"&lt;", ">":"&gt;", '"':"&quot;", "'":"&#39;" }[c]));
+const reduceMotion = matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+function waLink(message){
+  return "https://wa.me/" + SITE.whatsappNumber + "?text=" + encodeURIComponent(message);
+}
+function openWhatsApp(message){
+  const a = document.createElement("a");
+  a.href = waLink(message);
+  a.target = "_blank";
+  a.rel = "noopener";
+  document.body.appendChild(a);
+  a.click();
+  a.remove();
+}
+function categoryName(id){
+  const c = CATEGORIES.find(c => c.id === id);
+  return c ? c.name : "";
+}
+
+function setupFormOptions(){
+  $("#year").textContent = new Date().getFullYear();
+  const select = $("#cf-category");
+  [...CATEGORIES.map(c => c.name), "Smart lighting solutions", "Home / residential project", "Commercial project", "Other"].forEach(name => {
+    const opt = document.createElement("option");
+    opt.value = name;
+    opt.textContent = name;
+    select.appendChild(opt);
+  });
+}
+
+function renderChips(){
+  const all = [{ id:"all", name:"All" }, ...CATEGORIES];
+  $("#categoryChips").innerHTML = all.map(c =>
+    `<button class="chip" type="button" data-chip="${c.id}" aria-pressed="${activeCategory === c.id}">${esc(c.name)}</button>`).join("");
+}
+
+function renderProducts(){
+  const term = $("#productSearch").value.trim().toLowerCase();
+  const list = PRODUCTS.filter(p =>
+    (activeCategory === "all" || p.category === activeCategory) &&
+    (!term || p.name.toLowerCase().includes(term) || p.desc.toLowerCase().includes(term) || categoryName(p.category).toLowerCase().includes(term)));
+  $("#productGrid").innerHTML = list.map(p => `
+    <article class="card prod-card">
+      <button class="zoom" type="button" data-details="${p.id}" aria-label="View details of ${esc(p.name)}">
+        <img src="${p.image}" alt="${esc(p.name)}" width="600" height="600" loading="lazy">
+      </button>
+      <div class="prod-body">
+        <span class="tag-sample">Sample product</span>
+        <h3>${esc(p.name)}</h3>
+        <p class="prod-cat">${esc(categoryName(p.category))}</p>
+        <p class="prod-price">Price on enquiry</p>
+        <div class="prod-actions">
+          <button class="btn btn-line btn-sm" type="button" data-details="${p.id}">View Details</button>
+          <button class="btn btn-amber btn-sm" type="button" data-enquire="${p.id}">Enquire</button>
+        </div>
+      </div>
+    </article>`).join("");
+  $("#noResults").hidden = list.length > 0;
+}
+
+function setCategory(id, scroll){
+  activeCategory = id;
+  renderChips();
+  renderProducts();
+  if (scroll) $("#products").scrollIntoView({ behavior: reduceMotion ? "auto" : "smooth" });
+}
+
+function enquireProduct(id){
+  const p = PRODUCTS.find(p => p.id === id);
+  if (p) openWhatsApp(`Hello LED PLANET, I would like to know more about the ${p.name}. Could you please share the price and availability?`);
+}
+
+function openProductModal(id){
+  const p = PRODUCTS.find(p => p.id === id);
+  if (!p) return;
+  $("#modalBody").innerHTML = `
+    <img src="${p.image}" alt="${esc(p.name)}">
+    <span class="tag-sample">Sample product</span>
+    <h3 class="h3" id="modalTitle" style="font-size:1.35rem">${esc(p.name)}</h3>
+    <p class="muted" style="margin-top:4px">${esc(categoryName(p.category))}</p>
+    <p style="margin-top:12px">${esc(p.desc)}</p>
+    <p class="prod-price" style="margin-top:12px">Price on enquiry · Availability confirmed on WhatsApp</p>
+    <button class="btn btn-amber" type="button" data-enquire="${p.id}"><svg class="icon"><use href="#i-wa"/></svg>Enquire Now</button>`;
+  $("#productModal").showModal();
+}
+
+function setupMenu(){
+  const btn = $("#menuBtn"), menu = $("#mobileMenu");
+  const setOpen = open => {
+    menu.style.maxHeight = open ? menu.scrollHeight + "px" : "0px";
+    btn.setAttribute("aria-expanded", String(open));
+    btn.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+    btn.querySelector("use").setAttribute("href", open ? "#i-x" : "#i-menu");
+  };
+  btn.addEventListener("click", () => setOpen(btn.getAttribute("aria-expanded") !== "true"));
+  $$("a", menu).forEach(a => a.addEventListener("click", () => setOpen(false)));
+  matchMedia("(min-width: 961px)").addEventListener("change", e => { if (e.matches) setOpen(false); });
+}
+
+function setupForm(){
+  const form = $("#contactForm"), note = $("#formNote"), submitBtn = $("#submitBtn");
+
+  function validate(){
+    const name = $("#cf-name"), phone = $("#cf-phone"), email = $("#cf-email");
+    const nameOk = name.value.trim().length > 0;
+    const phoneOk = phone.value.replace(/\D/g, "").length >= 10;
+    const emailOk = !email.value.trim() || email.validity.valid;
+    [[name, nameOk], [phone, phoneOk], [email, emailOk]].forEach(([el, ok]) => {
+      el.closest(".field").classList.toggle("invalid", !ok);
+      el.setAttribute("aria-invalid", String(!ok));
     });
-  })();
+    const firstBad = !nameOk ? name : !phoneOk ? phone : !emailOk ? email : null;
+    if (firstBad) firstBad.focus();
+    return !firstBad;
+  }
+
+  function whatsappText(){
+    const category = $("#cf-category").value;
+    const message = $("#cf-message").value.trim();
+    let text = `Hello LED PLANET, my name is ${$("#cf-name").value.trim()} (${$("#cf-phone").value.trim()}).`;
+    if (category) text += ` I'm interested in: ${category}.`;
+    if (message) text += ` ${message}`;
+    return text;
+  }
+
+  function setNote(text, state){
+    note.textContent = text;
+    note.classList.toggle("ok", state === "ok");
+    note.classList.toggle("bad", state === "bad");
+  }
+
+  form.addEventListener("submit", async e => {
+    e.preventDefault();
+    if (!validate()) return;
+    const data = new FormData(form);
+    if (!data.get("email")) data.delete("email");
+    if (!data.get("category")) data.set("category", "Not specified");
+    if (!data.get("message")) data.set("message", "(no message)");
+    submitBtn.disabled = true;
+    submitBtn.textContent = "Sending…";
+    try {
+      const res = await fetch(form.action, { method: "POST", headers: { Accept: "application/json" }, body: data });
+      const json = await res.json();
+      if (!res.ok || !json.success) throw new Error(json.message || "Request failed");
+      form.reset();
+      setNote("Thank you! Your enquiry has been sent. Our team will contact you soon.", "ok");
+    } catch (err) {
+      setNote("Sorry, we couldn't send your enquiry just now. Please try \"Send on WhatsApp instead\" or call +91 98949 59523.", "bad");
+    } finally {
+      submitBtn.disabled = false;
+      submitBtn.textContent = "Send Enquiry";
+    }
+  });
+
+  $("#waFormBtn").addEventListener("click", () => {
+    if (!validate()) return;
+    openWhatsApp(whatsappText());
+    setNote("WhatsApp is opening with your enquiry. Press send in WhatsApp to reach us.", "ok");
+  });
+
+  $$("#cf-name, #cf-phone, #cf-email").forEach(input => input.addEventListener("input", () => input.closest(".field").classList.remove("invalid")));
+}
+
+function setupEvents(){
+  document.addEventListener("click", e => {
+    const t = e.target.closest("[data-wa],[data-category],[data-chip],[data-details],[data-enquire],[data-close-modal]");
+    if (!t) return;
+    if (t.dataset.wa) openWhatsApp(t.dataset.wa);
+    else if (t.dataset.category) { e.preventDefault(); setCategory(t.dataset.category, true); }
+    else if (t.dataset.chip) setCategory(t.dataset.chip, false);
+    else if (t.dataset.details) openProductModal(Number(t.dataset.details));
+    else if (t.dataset.enquire) enquireProduct(Number(t.dataset.enquire));
+    else if (t.hasAttribute("data-close-modal")) $("#productModal").close();
+  });
+  $("#productSearch").addEventListener("input", renderProducts);
+  $("#productModal").addEventListener("click", e => { if (e.target === e.currentTarget) e.currentTarget.close(); });
+}
+
+function addFaqSchema(){
+  // Built from the FAQ and LED guide on the page so the structured data always matches what visitors see.
+  const s = document.createElement("script");
+  s.type = "application/ld+json";
+  s.textContent = JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: $$("#faq details").map(d => ({
+      "@type": "Question",
+      name: d.querySelector("summary").textContent.trim(),
+      acceptedAnswer: { "@type": "Answer", text: d.querySelector(".faq-body").textContent.trim() }
+    }))
+  });
+  document.head.appendChild(s);
+}
+
+function setupReveal(){
+  if (reduceMotion || !("IntersectionObserver" in window)) return;
+  const els = $$(".reveal").filter(el => el.getBoundingClientRect().top > innerHeight);
+  els.forEach(el => el.classList.add("pre"));
+  const io = new IntersectionObserver(entries => entries.forEach(entry => {
+    if (entry.isIntersecting) { entry.target.classList.remove("pre"); io.unobserve(entry.target); }
+  }), { threshold: 0.12 });
+  els.forEach(el => io.observe(el));
+}
+
+setupFormOptions();
+renderChips();
+renderProducts();
+setupMenu();
+setupForm();
+setupEvents();
+setupReveal();
+addFaqSchema();
 </script>
 </body>
 </html>
